@@ -7,26 +7,23 @@ import { Container, Col, Row } from 'react-bootstrap'
 import MainSlider from '../components/slider'
 import Welcome from '../components/welcome'
 import Invitados from "../components/invitados"
+import Programa from '../components/programa'
 
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Inicio" />
-        <Container fluid>
+        <Container fluid fluid className='gradient'>
           < MainSlider />
-        </Container>
-        <Container fluid className='gradient'>
           <Row>
             <Col md={5} sm={12} xs={12} ></Col>
             <Col md={7} sm={12} xs={12}><Welcome /></Col>
           </Row>
           <Row>
+            <Programa />
             <Invitados />
           </Row>
         </Container>
-        
-         
-          <Link to="/page-2/">Go to page 2</Link> <br />
          
   </Layout>
 )

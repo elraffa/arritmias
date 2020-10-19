@@ -15,7 +15,7 @@ module.exports = {
       }, 
       {
         name:'programa',
-        link:'/programa'
+        link:'#programa'
       },
       {
         name:'sponsors',
@@ -32,24 +32,54 @@ module.exports = {
     ], 
     invitados: [
       {
-        name: 'Juan Carlos Portaluppi',
-        country: 'Brasil',
-        filename: 'src/images/logo.png'
+        name: 'Ángel Arenal',
+        country: 'Hospital Gregorio Marañon - Madrid, España',
+        filename: 'arenal'
       },
       {
-        name: 'Mauricio Scanavacca',
-        country: 'Brasil',
-        filename: 'src/images/logo.png'
+        name: 'Adrián Baranchuk',
+        country: 'Universidad de Kingston - Canadá',
+        filename: 'baranchuk'
       },
       {
-        name: 'Mauricio Scanavacca',
-        country: 'Brasil',
-        filename: 'src/images/logo.png'
+        name: 'Roberto Costa',
+        country: 'Hospital Sirio-Libanés - San Pablo, Brasil',
+        filename: 'costa'
+      },
+      {
+        name: 'Carlos Grande',
+        country: 'Hospital U. Son Espases – Palma de Mallorca, España',
+        filename: 'grande'
+      },
+      {
+        name: 'Elkin González Villegas',
+        country: 'Hospital U. La Paz – Madrid, España',
+        filename: 'villegas'
       },
       {
         name: 'Carina Hardy',
-        country: 'Brasil',
+        country: 'INCOR - San Pablo, Brasil',
         filename: 'hardy'
+      },
+      {
+        name: 'José Luis Merino',
+        country: 'Hospital Universitario la Paz - Madrid, España',
+        filename: 'merino'
+      },
+      {
+        name: 'Ángel Moya Mitjans',
+        country: 'Hospital Universitario Dexeus – Barcelona, España',
+        filename: 'mitjans'
+      },
+      {
+        name: 'José Carlos Pachón Mateos',
+        country: 'Hospital del Corazón – San Pablo, Brasil',
+        filename: 'pachon'
+      },
+      {
+        name: 'Armando Pérez Silva',
+        country: 'Hospital Regional – Concepción, Chile',
+        filename: 'pachon'
       },
       {
         name: 'Mauricio Scanavacca',

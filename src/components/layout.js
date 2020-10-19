@@ -19,16 +19,16 @@ const { title, menuLinks } = useSiteMetadata()
   return (
       <div id='main'>
         <Header menuLinks={menuLinks} siteTitle={ title || `Title`} />
-          <div>
-            <main>{children}</main>
-            <footer style={{
+        <div>
+           <main>{children}</main>
+        <footer style={{
               marginTop: `2rem`
             }}>
               © {new Date().getFullYear()}, Built with
               {` `}
-              <a href="https://www.gatsbyjs.com">Gatsby</a>
-            </footer>
-          </div>
+            <a href="https://www.gatsbyjs.com">Gatsby</a>
+        </footer>
+        </div>
         
       </div>
   )
