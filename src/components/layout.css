@@ -728,7 +728,7 @@ ul.mobile-social {
 
 /* Programa */
 #programa {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 140px;
   overflow: hidden;
 }
 
@@ -798,6 +798,32 @@ ul.mobile-social {
   left: 2vw;
 }
 
+/* Sponsors */
+
+#sponsors {
+  scroll-margin-top: 120px;
+}
+
+.img-sponsors {
+  max-width: 200px;
+  filter: grayscale(100%);
+  transition: filter 500ms;
+  cursor: pointer;
+}
+
+.img-sponsors:hover {
+  filter: none;
+}
+
+.sponsors-row {
+  margin: 0;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -815,6 +841,10 @@ ul.mobile-social {
 
   .mobile-hide {
     display: none !important;
+  }
+
+  .img-sponsors {
+    max-width: 150px;
   }
 }
 

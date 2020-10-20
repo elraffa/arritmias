@@ -27,8 +27,7 @@ const Programa = (props) => {
                 <h1>Programa</h1>
             </Row>
 
-            <Row style={{ margin: 0, width: '100%' }} id='programa'>
-
+            <Row style={{ margin: 0, width: '100%' }}>
 
                 <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowClinica} data-target="#clinica" >
                     <div className='card'>
@@ -106,12 +105,12 @@ const Programa = (props) => {
                     <Modal.Header closeButton>
                         <Modal.Title>Muerte Súbita</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>     
+                    <Modal.Body>
                         <ul>
                             <li>Prevención de Muerte Súbita. Nuevos predictores en 2020. </li>
                             <li>Arritmias en pediatría</li>
                             <li>Sesiones para técnicos y enfermeros</li>
-                         </ul>
+                        </ul>
                     </Modal.Body>
 
                     <Modal.Footer>

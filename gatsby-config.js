@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         name:'sponsors',
-        link:'/sponsors'
+        link:'#sponsors'
       },
       {
         name:'exposicion',

@@ -8,23 +8,25 @@ import MainSlider from '../components/slider'
 import Welcome from '../components/welcome'
 import Invitados from "../components/invitados"
 import Programa from '../components/programa'
+import Sponsors from '../components/sponsors'
 
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Inicio" />
-        <Container fluid fluid className='gradient'>
-          < MainSlider />
-          <Row>
-            <Col md={5} sm={12} xs={12} ></Col>
-            <Col md={7} sm={12} xs={12}><Welcome /></Col>
-          </Row>
-          <Row>
-            <Programa />
-            <Invitados />
-          </Row>
-        </Container>
-         
+    <Container fluid fluid className='gradient'>
+      < MainSlider />
+      <Row>
+        <Col md={5} sm={12} xs={12} ></Col>
+        <Col md={7} sm={12} xs={12}><Welcome /></Col>
+      </Row>
+      <Row>
+        <Programa />
+        <Invitados />
+      </Row>
+      <Sponsors />
+    </Container>
+
   </Layout>
 )
 
