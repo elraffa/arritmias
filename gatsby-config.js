@@ -86,6 +86,36 @@ module.exports = {
         country: 'Brasil',
         filename: `scanavacca`
       }
+    ], 
+    programa: [
+      {
+        name: 'Clínica',
+        description: 'Fibrilación auricular: - Manejo de la FA asintomática.\
+        - ¿Qué nos indican las nuevas guías europeas de FA?\
+        - Manejo de la Anticoagulación en FA.\
+        Síncope Reflejo. Monitorización electrocardiográfica en el Sincope: invasiva y\
+        no invasiva – Indicación y modo de estimulación cardíaca.'
+      },
+      {
+        name: 'Ablación',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore facere sint impedit sapiente? Deserunt eaque ipsam enim est illo.',
+      },
+      {
+        name: 'Dispositivos',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore facere sint impedit sapiente? Deserunt eaque ipsam enim est illo.',
+      },
+      {
+        name: 'Muerte Súbita',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore facere sint impedit sapiente? Deserunt eaque ipsam enim est illo.',
+      },
+      {
+        name: 'Arritmias en Pediatría',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore facere sint impedit sapiente? Deserunt eaque ipsam enim est illo.',
+      },
+      {
+        name: 'Sesiones para técnicos y enfermeros',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore facere sint impedit sapiente? Deserunt eaque ipsam enim est illo.',
+      },
     ]
   },
   plugins: [

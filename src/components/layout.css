@@ -729,6 +729,7 @@ ul.mobile-social {
 /* Programa */
 #programa {
   scroll-margin-top: 120px;
+  overflow: hidden;
 }
 
 .card {
@@ -736,11 +737,10 @@ ul.mobile-social {
   margin: 10px auto 10px auto;
   text-align: center;
   background-color: transparent;
-  align-items: center;
-  justify-content: center;
   border: 2px solid white;
   color: white;
   transition: background-color 1000ms;
+  align-self: stretch;
 }
 
 .card:hover {
@@ -753,8 +753,49 @@ ul.mobile-social {
 
 .card h4 {
   margin: 0;
-  padding: 50px;
+  padding: 40px;
   text-transform: uppercase;
+}
+
+.overlay {
+  position: fixed;
+  top: 30vh;
+  z-index: 1;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.overlay-content {
+  width: 90vw;
+  padding: 40px;
+  transition: all 0.3s ease-out;
+}
+
+.close-modal {
+  cursor: pointer;
+  font-size: 4em;
+  margin-top: -40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.next,
+.prev {
+  color: black;
+  font-size: 50px;
+  position: fixed;
+}
+
+.next {
+  top: 50%;
+  right: 2vw;
+}
+
+.prev {
+  top: 50%;
+  left: 2vw;
 }
 
 @media only screen and (max-width: 480px) {

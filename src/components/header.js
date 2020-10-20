@@ -25,7 +25,7 @@ const Header = ({ siteTitle, menuLinks }) => {
   )
   return (
 
-    <header id='header' class='sticky-top' style={{ backgroundColor: 'white' }}>
+    <header id='header' className='sticky-top' style={{ backgroundColor: 'white' }}>
       <div className='desktop-hide'>
         <BurgerMenu menuLinks={menuLinks} />
       </div>

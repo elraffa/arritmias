@@ -16,6 +16,10 @@ export const useSiteMetadata = () => {
                           country
                           filename
                         }
+                        programa {
+                          name
+                          description
+                        }
                     }
                 }
                 
