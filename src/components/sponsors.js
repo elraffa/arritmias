@@ -12,7 +12,7 @@ import { Row, Col } from 'react-bootstrap'
 const Sponsors = () => (
     <div id='sponsors' className='sponsors' >
         <Row className='sponsors-row' >
-            <h1>Sponsors</h1>
+            <h1 className='main-titles'>Sponsors</h1>
         </Row>
         <Row className='sponsors-row' >
             <h2>Diamante</h2>

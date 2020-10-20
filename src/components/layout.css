@@ -599,6 +599,13 @@ pre tt:after {
 
 /* Custom styles */
 
+/* Main */
+.main-titles {
+  color: #8F8E8E;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* Sticky Header */
 #header.reduce .social {
   font-size: 90%;

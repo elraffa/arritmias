@@ -24,7 +24,7 @@ const Programa = (props) => {
     return (
         <div id='programa'>
             <Row style={{ margin: 0, padding: 20 }} >
-                <h1>Programa</h1>
+                <h1 className='main-titles'>Programa</h1>
             </Row>
 
             <Row style={{ margin: 0, width: '100%' }}>
