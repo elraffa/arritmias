@@ -57,7 +57,7 @@ const Programa = (props) => {
                 </Col>
                 <Col md={4} sm={12} xs={12} className='programa'  >
                     <div className='card'>
-                        <h4 id='h4'>Sesiones p/Técnicos y Enfermeros</h4>
+                        <h4 id='h4'>Ses. p/Técnicos y Enfermeros</h4>
                     </div>
                 </Col>
 
@@ -65,7 +65,16 @@ const Programa = (props) => {
                     <Modal.Header closeButton>
                         <Modal.Title>Clínica</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>
+                        <ul>
+                            <li>Fibrilación auricular: - Manejo de la FA asintomática.</li>
+                            <ul>
+                                <li>¿Qué nos indican las nuevas guías europeas de FA? </li>
+                                <li>Manejo de la Anticoagulación en FA.</li>
+                            </ul>
+                            <li>Síncope Reflejo. Monitorización electrocardiográfica en el Sincope: invasiva y no invasiva – Indicación y modo de estimulación cardíaca.</li>
+                        </ul>
+                    </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleCloseClinica}>
                             Cerrar
@@ -75,9 +84,17 @@ const Programa = (props) => {
 
                 <Modal show={ablacion} onHide={handleCloseAblacion} id='ablacion' aria-labelledby="ablacionLabel">
                     <Modal.Header closeButton>
-                        <Modal.Title>Ablacion</Modal.Title>
+                        <Modal.Title>Ablación</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>
+                        <ul>
+                            <li>Ablación de FA Persistente</li>
+                            <li>Ablación de FA en Insuficiencia Cardíaca.</li>
+                            <li>Avances recientes en la Ablación de la Taquicardia Ventricular. Abordaje endo-epicardico.</li>
+                            <li>Mapas de alta densidad. Cuando y como utilizarlos.</li>
+                            <li>Rol de las imágenes para una ablación más segura.</li>
+                        </ul>
+                    </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleCloseAblacion}>
                             Cerrar
@@ -89,7 +106,14 @@ const Programa = (props) => {
                     <Modal.Header closeButton>
                         <Modal.Title>Muerte Súbita</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>     
+                        <ul>
+                            <li>Prevención de Muerte Súbita. Nuevos predictores en 2020. </li>
+                            <li>Arritmias en pediatría</li>
+                            <li>Sesiones para técnicos y enfermeros</li>
+                         </ul>
+                    </Modal.Body>
+
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleCloseSubita}>
                             Cerrar
@@ -101,7 +125,15 @@ const Programa = (props) => {
                     <Modal.Header closeButton>
                         <Modal.Title>Dispositivos</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>
+                        <ul>
+                            <li>Sincronía eléctrica: métodos actuales para evaluar sincronía ventricular. </li>
+                            <li>TRC indicaciones convencionales y no convencionales: ¿Qué hay de nuevo?</li>
+                            <li>Nuevos sitios de estimulación: ¿Dónde implantar para optimizar resultados?</li>
+                            <li>Monitoreo remoto de pacientes con dispositivos cardiacos implantables.</li>
+                            <li>Extracción de Electrodos: “Estrategias y desafíos en procedimientos complejos”</li>
+                        </ul>
+                    </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleCloseDispositivos}>
                             Cerrar
