@@ -14,23 +14,23 @@ import "./layout.css"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 const Layout = ({ children }) => {
-const { title, menuLinks } = useSiteMetadata()
+  const { title, menuLinks } = useSiteMetadata()
 
   return (
-      <div id='main'>
-        <Header menuLinks={menuLinks} siteTitle={ title || `Title`} />
-        <div>
-           <main>{children}</main>
+    <div id='main'>
+      <Header menuLinks={menuLinks} siteTitle={title || `Title`} />
+      <div>
+        <main>{children}</main>
         <footer style={{
-              marginTop: `2rem`
-            }}>
-              © {new Date().getFullYear()}, Built with
+          marginTop: `2rem`
+        }}>
+          © {new Date().getFullYear()}, Encuentro Nacional de Arritmias.
               {` `}
-            <a href="https://www.gatsbyjs.com">Gatsby</a>
+          Diseño y desarrollo web por <a href="https://www.mktdigitalideas.com">MKTDigital Ideas</a>
         </footer>
-        </div>
-        
       </div>
+
+    </div>
   )
 }
 

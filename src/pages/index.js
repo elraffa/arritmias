@@ -18,7 +18,7 @@ const IndexPage = () => (
     <Container fluid fluid className='gradient'>
       < MainSlider />
       <Row>
-        <Col md={5} sm={12} xs={12} ><Comite /></Col>
+        <Col md={5} sm={12} xs={12} style={{ justifyContent: 'center', alignItems: 'center'}} ><Comite /></Col>
         <Col md={7} sm={12} xs={12}><Welcome /></Col>
       </Row>
       <Row>

@@ -23,9 +23,10 @@ const Programa = (props) => {
 
     return (
         <div id='programa'>
-            <Row style={{ margin: 0, padding: 20 }} >
+            <Row className='sponsors-row'>
                 <h1 className='main-titles'>Programa</h1>
             </Row>
+            <hr></hr>
 
             <Row style={{ margin: 0, width: '100%' }}>
 
@@ -90,7 +91,7 @@ const Programa = (props) => {
                             <li>Ablación de FA Persistente</li>
                             <li>Ablación de FA en Insuficiencia Cardíaca.</li>
                             <li>Avances recientes en la Ablación de la Taquicardia Ventricular. Abordaje endo-epicardico.</li>
-                            <li>Mapas de alta densidad. Cuando y como utilizarlos.</li>
+                            <li>Mapas de alta densidad. Cuándo y cómo utilizarlos.</li>
                             <li>Rol de las imágenes para una ablación más segura.</li>
                         </ul>
                     </Modal.Body>

@@ -93,6 +93,7 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
+  text-align: center;
 }
 mark {
   background-color: #ff0;
@@ -601,9 +602,18 @@ pre tt:after {
 
 /* Main */
 .main-titles {
-  color: #8f8e8e;
+  color: #444343;
   text-transform: uppercase;
+  text-align: center !important;
+  font-size: clamp(3rem, 6vw, 6rem);
+  margin-bottom: 0.6rem;
+}
+
+.main-subtitles {
+  color: #444343;
   text-align: center;
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin-bottom: 0.6rem;
 }
 
 /* Sticky Header */
@@ -679,7 +689,7 @@ ul.mobile-social {
 .mobile-social a {
   color: white !important;
   margin: 0 7px;
-  font-size: 24px;
+  font-size: 28px;
   transition: color 1000ms;
 }
 
@@ -733,9 +743,17 @@ ul.mobile-social {
   padding: 20px;
 }
 
+/* Welcome */
+.comite {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 40px;
+}
+
 /* Programa */
 #programa {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 100px;
   overflow: hidden;
 }
 
@@ -826,7 +844,7 @@ ul.mobile-social {
 /* Sponsors */
 
 #sponsors {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 95px;
 }
 
 .img-sponsors {
@@ -847,7 +865,27 @@ ul.mobile-social {
   align-items: center;
   align-content: center;
   text-align: center;
+
 }
+
+/* Floating */
+
+
+.floating {   
+  animation-name: floating; 
+  animation-duration: 3s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out; 
+  margin-left: 30px; 
+  margin-top: 5px; 
+} 
+
+@keyframes floating { 
+  0% { transform: translate(0,  0px); } 
+  50%  {  transform: translate(0, 10px); } 
+  100%   { transform: translate(0, -0px); }     
+} 
+
 
 @media only screen and (max-width: 480px) {
   html {
