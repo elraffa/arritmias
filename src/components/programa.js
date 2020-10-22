@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Col, Row, Modal, Button } from 'react-bootstrap'
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { FaChevronRight } from 'react-icons/fa';
 
 
 const Programa = (props) => {
@@ -33,21 +34,33 @@ const Programa = (props) => {
                 <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowClinica} data-target="#clinica" >
                     <div className='card'>
                         <h4 id='h4'>Clínica</h4>
+                        <div className='chevron-right'>
+                            <FaChevronRight />
+                        </div>
                     </div>
                 </Col>
                 <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowAblacion} data-target="#ablacion"  >
                     <div className='card'>
                         <h4 id='h4'>Ablación</h4>
+                        <div className='chevron-right'>
+                            <FaChevronRight />
+                        </div>
                     </div>
                 </Col>
                 <Col md={4} sm={12} xs={12} onClick={handleShowDispositivos} >
                     <div className='card'>
                         <h4 id='h4'>Dispositivos</h4>
+                        <div className='chevron-right'>
+                            <FaChevronRight />
+                        </div>
                     </div>
                 </Col>
                 <Col md={4} sm={12} xs={12} className='programa' className='programa' onClick={handleShowSubita}  >
                     <div className='card'>
                         <h4 id='h4'>Muerte Súbita</h4>
+                        <div className='chevron-right'>
+                            <FaChevronRight />
+                        </div>
                     </div>
                 </Col>
                 <Col md={4} sm={12} xs={12} className='programa'  >

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React, { useEffect } from "react"
 import Logo from './logo';
 import Menu from './menu';
-import { FaFacebook, FaTwitter, FaInstagram, FaCalendar } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaCalendar } from 'react-icons/fa';
 import BurgerMenu from './burgerMenu'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
