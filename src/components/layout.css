@@ -835,7 +835,8 @@ ul.mobile-social {
 /* Invitados */
 
 #invitados {
-  margin-top: 100px
+  margin-top: 100px;
+  scroll-margin-top: 100px;
 }
 
 .invitados-img {

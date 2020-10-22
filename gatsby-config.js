@@ -5,31 +5,27 @@ module.exports = {
     author: `SADEC`,
     menuLinks: [
       {
-        name:'inicio',
-        link:'/',
-        icon:'FaHome'
-      }, 
-      {
-        name:'bienvenida',
-        link:'#bienvenida'
-      }, 
-      {
-        name:'programa',
-        link:'#programa'
+        name: 'inicio',
+        link: '/',
+        icon: 'FaHome'
       },
       {
-        name:'sponsors',
-        link:'#sponsors'
+        name: 'bienvenida',
+        link: '#bienvenida'
       },
       {
-        name:'exposicion',
-        link:'/exposicion'
+        name: 'programa',
+        link: '#programa'
       },
       {
-        name:'novedades',
-        link:'/novedades'
+        name: 'invitados',
+        link: '#invitados'
       },
-    ], 
+      {
+        name: 'sponsors',
+        link: '#sponsors'
+      },
+    ],
     invitados: [
       {
         name: 'Ángel Arenal',
@@ -86,7 +82,7 @@ module.exports = {
         country: 'Brasil',
         filename: `scanavacca`
       }
-    ], 
+    ],
     programa: [
       {
         name: 'Clínica',
