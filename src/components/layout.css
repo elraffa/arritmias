@@ -601,7 +601,7 @@ pre tt:after {
 
 /* Main */
 .main-titles {
-  color: #8F8E8E;
+  color: #8f8e8e;
   text-transform: uppercase;
   text-align: center;
 }
@@ -803,6 +803,24 @@ ul.mobile-social {
 .prev {
   top: 50%;
   left: 2vw;
+}
+
+/* Invitados */
+.invitados-img {
+  border-radius: 150px;
+  max-width: 200px;
+  margin: 0 auto 20px auto;
+}
+
+.invitados-row {
+  margin: 0;
+  padding: 20;
+  justify-content: center;
+  text-align: center;
+}
+
+.invitado-name {
+  margin-bottom: 0.2em !important;
 }
 
 /* Sponsors */

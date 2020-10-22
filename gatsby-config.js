@@ -79,7 +79,7 @@ module.exports = {
       {
         name: 'Armando Pérez Silva',
         country: 'Hospital Regional – Concepción, Chile',
-        filename: 'pachon'
+        filename: 'perez'
       },
       {
         name: 'Mauricio Scanavacca',

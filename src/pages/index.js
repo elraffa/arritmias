@@ -9,6 +9,7 @@ import Welcome from '../components/welcome'
 import Invitados from "../components/invitados"
 import Programa from '../components/programa'
 import Sponsors from '../components/sponsors'
+import Comite from '../components/comite'
 
 
 const IndexPage = () => (
@@ -17,7 +18,7 @@ const IndexPage = () => (
     <Container fluid fluid className='gradient'>
       < MainSlider />
       <Row>
-        <Col md={5} sm={12} xs={12} ></Col>
+        <Col md={5} sm={12} xs={12} ><Comite /></Col>
         <Col md={7} sm={12} xs={12}><Welcome /></Col>
       </Row>
       <Row>

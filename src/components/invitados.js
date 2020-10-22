@@ -32,20 +32,51 @@ const Invitados = () => {
             <Row style={{ margin: 0, padding: 20 }} >
             <h1>Invitados</h1>
             </Row>
-            <Row style={{ margin: 0, padding: 20 }}>
-                {invitados.map(invitado => (
-                    <Col md={2} sm={6} xs={6}>
+            <Row className='invitados-row'>
+                {invitados.map((invitado, index) => (
+                    index < 4 &&
+                    <Col md={3} sm={6} xs={6} >
                         {data.allFile.edges.map(({node}) => 
                                     (   
                                         invitado.filename === node.base.split('.')[0] &&
-                                        <Img fluid={node.childImageSharp.fluid} alt={node.base.split('.')[0]} style={{ borderRadius: 150, border: '4px solid #8e0508' }}/>
+                                        <Img fluid={node.childImageSharp.fluid} alt={node.base.split('.')[0]} className='invitados-img' />
                                     )
                                 )}
-                                <h3>{invitado.name}</h3>
+                                <h3 className='invitado-name'>{invitado.name}</h3>
                                 <p>{invitado.country}</p>
                     </Col>
                         ))}
-                </Row>
+              </Row>
+              <Row className='invitados-row'>
+                {invitados.map((invitado, index) => (
+                    (index > 3 && index < 7) &&
+                    <Col md={3} sm={6} xs={6} style={{ justifyContent: 'center' }}>
+                        {data.allFile.edges.map(({node}) => 
+                                    (   
+                                        invitado.filename === node.base.split('.')[0] &&
+                                        <Img fluid={node.childImageSharp.fluid} alt={node.base.split('.')[0]} className='invitados-img'/>
+                                    )
+                                )}
+                                <h3 className='invitado-name'>{invitado.name}</h3>
+                                <p>{invitado.country}</p>
+                    </Col>
+                        ))}
+              </Row>
+              <Row className='invitados-row'>
+                {invitados.map((invitado, index) => (
+                    (index > 6 && index < 13) &&
+                    <Col md={3} sm={6} xs={6}>
+                        {data.allFile.edges.map(({node}) => 
+                                    (   
+                                        invitado.filename === node.base.split('.')[0] &&
+                                        <Img fluid={node.childImageSharp.fluid} alt={node.base.split('.')[0]} className='invitados-img'/>
+                                    )
+                                )}
+                                <h3 className='invitado-name'>{invitado.name}</h3>
+                                <p>{invitado.country}</p>
+                    </Col>
+                        ))}
+              </Row>
         </div>
     )
 }
