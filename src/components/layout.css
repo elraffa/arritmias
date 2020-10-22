@@ -756,6 +756,7 @@ ul.mobile-social {
 #programa {
   scroll-margin-top: 100px;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .card {
@@ -832,6 +833,11 @@ ul.mobile-social {
 }
 
 /* Invitados */
+
+#invitados {
+  margin-top: 100px
+}
+
 .invitados-img {
   border-radius: 150px;
   max-width: 200px;
@@ -853,6 +859,7 @@ ul.mobile-social {
 
 #sponsors {
   scroll-margin-top: 95px;
+  margin-top: 100px
 }
 
 .img-sponsors {
@@ -875,6 +882,7 @@ ul.mobile-social {
   text-align: center;
 
 }
+
 
 /* Floating */
 

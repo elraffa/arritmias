@@ -28,7 +28,7 @@ const Invitados = () => {
     }
     `)
     return (
-        <div className='invitados'>
+        <div id='invitados' className='invitados'>
             <Row className='sponsors-row' >
                 <h1 className='main-titles'>Invitados</h1>
             </Row>
