@@ -927,6 +927,10 @@ ul.mobile-social {
     display: none !important;
   }
 
+  .comite {
+    padding: 0 40px 10px 40px;
+  }
+
   .img-sponsors {
     max-width: 150px;
   }

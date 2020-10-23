@@ -5,7 +5,7 @@ import { FaHeartbeat } from 'react-icons/fa';
 const Comite = () => (
 
     <div className="comite">
-        {/* <img className='img-fluid floating' style={{ maxWidth: 250, margin: '0 auto', textAlign: 'center' }} src={LogoCol} alt='Encuentro Nacional de Arritmias' /> */}
+        <span className='btn-inscripciones desktop-hide'><a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones</a></span>
         <div className='floating' style={{ maxWidth: 250, margin: '0 auto', textAlign: 'center', fontSize: 80 }} >
         <FaHeartbeat />
         </div>
