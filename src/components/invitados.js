@@ -35,7 +35,7 @@ const Invitados = () => {
             <hr></hr>
             <Row className='invitados-row'>
                 {invitados.map((invitado, index) => (
-                    index < 4 &&
+                    // index < 4 &&
                     <Col md={3} sm={6} xs={6} >
                         {data.allFile.edges.map(({ node }) =>
                             (
@@ -47,7 +47,9 @@ const Invitados = () => {
                         <p>{invitado.country}</p>
                     </Col>
                 ))}
-            </Row>
+                </Row>
+            {/* Code if need to modify */}
+            {/* 
             <Row className='invitados-row'>
                 {invitados.map((invitado, index) => (
                     (index > 3 && index < 7) &&
@@ -77,7 +79,7 @@ const Invitados = () => {
                         <p>{invitado.country}</p>
                     </Col>
                 ))}
-            </Row>
+            </Row> */}
         </div>
     )
 }

@@ -33,14 +33,19 @@ module.exports = {
         filename: 'arenal'
       },
       {
-        name: 'Adrián Baranchuk',
-        country: 'Universidad de Kingston - Canadá',
-        filename: 'baranchuk'
+        name: 'David Calvo Cuervo',
+        country: 'Hospital Universitario de Asturias – España)',
+        filename: 'calvo'
       },
       {
         name: 'Roberto Costa',
         country: 'Hospital Sirio-Libanés - San Pablo, Brasil',
         filename: 'costa'
+      },
+      {
+        name: 'Fermín García',
+        country: 'Pennsylvania Hospital - EE.UU.',
+        filename: 'garcia'
       },
       {
         name: 'Carlos Grande',
