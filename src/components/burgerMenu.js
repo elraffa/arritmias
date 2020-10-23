@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 
-import { FaFacebook, FaTwitter, FaInstagram, FaCaretRight } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaCaretRight } from 'react-icons/fa';
 import { stack as Menu } from 'react-burger-menu';
 import { Button } from 'react-bootstrap';
 import logoWhite from '../images/logo-white.png';
@@ -67,7 +67,7 @@ const BurgerMenu = ({ menuLinks }) => {
   return (
 
     <Menu styles={styles} right isOpen={menuOpenState} onStateChange={(state) => stateChangeHandler(state)} >
-      <Button variant="outline-light" className='btn-lg' style={{ textTransform: 'uppercase', display: 'block', margin: '0 auto' }} className='btn-inscripciones-mobile'><a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones{<FaCaretRight />}</a></Button>
+      <Button variant="outline-light" style={{ textTransform: 'uppercase', display: 'block', margin: '0 auto' }} className='btn-lg btn-inscripciones-mobile'><a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones{<FaCaretRight />}</a></Button>
       <ul>
         {menuLinks.map((link) => (
           <li

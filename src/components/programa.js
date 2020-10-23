@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Col, Row, Modal, Button } from 'react-bootstrap'
-import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { FaChevronRight } from 'react-icons/fa';
 
 
 const Programa = (props) => {
 
-    const { programa } = useSiteMetadata()
+    // const { programa } = useSiteMetadata()
     const [clinica, setClinica] = useState(false);
     const [ablacion, setAblacion] = useState(false);
     const [dispositivos, setDispositivos] = useState(false);
@@ -47,7 +46,7 @@ const Programa = (props) => {
                         </div>
                     </div>
                 </Col>
-                <Col md={4} sm={12} xs={12} onClick={handleShowDispositivos} >
+                <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowDispositivos} >
                     <div className='card'>
                         <h4 id='h4'>Dispositivos</h4>
                         <div className='chevron-right'>
@@ -55,7 +54,7 @@ const Programa = (props) => {
                         </div>
                     </div>
                 </Col>
-                <Col md={4} sm={12} xs={12} className='programa' className='programa' onClick={handleShowSubita}  >
+                <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowSubita}  >
                     <div className='card'>
                         <h4 id='h4'>Muerte Súbita</h4>
                         <div className='chevron-right'>

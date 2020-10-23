@@ -1,5 +1,4 @@
 import React from 'react';
-import LogoCol from '../images/logo-col.png'
 import { FaHeartbeat } from 'react-icons/fa';
 
 const Comite = () => (

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
@@ -15,7 +14,7 @@ import Comite from '../components/comite'
 const IndexPage = () => (
   <Layout>
     <SEO title="Inicio" />
-    <Container fluid fluid className='gradient'>
+    <Container fluid className='gradient'>
       < MainSlider />
       <Row>
         <Col md={5} sm={12} xs={12} style={{ justifyContent: 'center', alignItems: 'center'}} ><Comite /></Col>
