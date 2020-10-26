@@ -2,9 +2,9 @@ import React from 'react';
 import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css"; 
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
-import slide1 from '../images/banner-web-2020.jpg';
-import slide2 from '../images/logo.png';
-
+import slide1 from '../images/Slide1_arritmias.jpg';
+import slide2 from '../images/Slide2_arritmias.jpg';
+import slide3 from '../images/Slide3_arritmias.jpg';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -48,7 +48,7 @@ const MainSlider = () =>
                     <img src={slide2} alt='Second slide' />
                 </div>
                 <div>
-                    <img src={slide1} alt='First slide' />
+                    <img src={slide3} alt='Third slide' />
                 </div>
             </Slider>
         </div>
