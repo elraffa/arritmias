@@ -31,7 +31,7 @@ const Programa = (props) => {
             <Row style={{ margin: 0, width: '100%' }}>
 
                 <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowClinica} data-target="#clinica" >
-                    <div className='card'>
+                    <div className='card card-clinica'>
                         <h4 id='h4'>Clínica</h4>
                         <div className='chevron-right'>
                             <FaChevronRight />
@@ -39,7 +39,7 @@ const Programa = (props) => {
                     </div>
                 </Col>
                 <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowAblacion} data-target="#ablacion"  >
-                    <div className='card'>
+                    <div className='card card-ablacion'>
                         <h4 id='h4'>Ablación</h4>
                         <div className='chevron-right'>
                             <FaChevronRight />
@@ -47,7 +47,7 @@ const Programa = (props) => {
                     </div>
                 </Col>
                 <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowDispositivos} >
-                    <div className='card'>
+                    <div className='card card-dispositivos'>
                         <h4 id='h4'>Dispositivos</h4>
                         <div className='chevron-right'>
                             <FaChevronRight />
@@ -55,7 +55,7 @@ const Programa = (props) => {
                     </div>
                 </Col>
                 <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowSubita}  >
-                    <div className='card'>
+                    <div className='card card-subita'>
                         <h4 id='h4'>Muerte Súbita</h4>
                         <div className='chevron-right'>
                             <FaChevronRight />
@@ -63,12 +63,12 @@ const Programa = (props) => {
                     </div>
                 </Col>
                 <Col md={4} sm={12} xs={12} className='programa'  >
-                    <div className='card'>
+                    <div className='card card-pediatria'>
                         <h4 id='h4'>Arritmias en Pediatría</h4>
                     </div>
                 </Col>
                 <Col md={4} sm={12} xs={12} className='programa'  >
-                    <div className='card'>
+                    <div className='card card-tecnicos'>
                         <h4 id='h4'>Ses. p/Técnicos y Enfermeros</h4>
                     </div>
                 </Col>

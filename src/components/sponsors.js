@@ -6,6 +6,7 @@ import medtronic from '../images/sponsors/medtronic.png'
 import eccosur from '../images/sponsors/logo_eccosur.svg'
 import boehringer from '../images/sponsors/boehringer.png'
 import roemmers from '../images/sponsors/roemmers.png'
+import exo from '../images/sponsors/logo-exo.png'
 import { Row, Col } from 'react-bootstrap'
 
 
@@ -57,11 +58,14 @@ const Sponsors = () => (
         </Col>
         </Row>
         <Row className='sponsors-row' >
-            <h2 className='main-subtitles'>Acompaña</h2>
+            <h2 className='main-subtitles'>Acompañan</h2>
         </Row>
         <Row className='sponsors-row'>
-            <Col md={12} >
+            <Col md={6} sm={12} xs={12}>
                 <a href='https://www.roemmers.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={roemmers} alt='Roemmers' /></a>
+            </Col>
+            <Col md={6} sm={12} xs={12}>
+                <a href='https://www.exo.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={exo} alt='Exo' /></a>
             </Col>
         </Row>
     </div>

@@ -770,11 +770,35 @@ ul.mobile-social {
   margin: 10px auto 10px auto;
   text-align: center;
   background-color: transparent;
-  border: 2px solid #444343;
+  /* border: 2px solid #444343; */
   color: #444343;
   transition: background-color 1000ms;
   align-self: stretch;
   max-height: 400px;
+}
+
+.card-clinica {
+  background-color: #46c8ff;
+}
+
+.card-ablacion {
+  background-color: #35bef8;
+}
+
+.card-dispositivos {
+  background-color: #24b6f4;
+}
+
+.card-subita {
+  background-color: #12aced;
+}
+
+.card-pediatria {
+  background-color: #06a5e8;
+}
+
+.card-tecnicos {
+  background-color: #009cde;
 }
 
 .card:hover {

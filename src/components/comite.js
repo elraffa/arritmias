@@ -15,7 +15,10 @@ const Comite = () => (
         <h3 style={{ marginTop: 20, borderBottom: '1px solid #ccc' }}>Comité Organizador y Científico</h3>
 
         <h4>Presidentes:</h4>
-        <h5>Marcelo Coll (FAC) - David Doiny (SAC) - Ricardo Speranza (SADEC)</h5>
+        <h5>Marcelo Coll (FAC)</h5>
+        <h5>David Doiny (SAC)</h5>  
+        <h5>Ricardo Speranza (SADEC)</h5>
+        <br></br>
         <h4>Secretarios:</h4>
         <Row>
             <Col><h5>Alejandro Cueto</h5><h5>Fernando Di Tommaso</h5> <h5>Gabriel Eidelman</h5> <h5>Estela Falconi </h5> <h5>Jorge Figueroa</h5> <h5>José Gant López </h5></Col>
@@ -23,6 +26,7 @@ const Comite = () => (
         </Row>
         <br></br>
         <hr/>
+        <h4>Organizan</h4>
         <Row className='organizadores'>
             <Col><h6>Comité de Arritmias</h6><a href='https://www.fac.org.ar' target='_blank' rel='noreferrer'><img src={fac} alt='Sociedad Argentina de Cardiología' /></a></Col>
             <Col><h6>Consejo de Arritmias</h6><a href='https://www.sac.org.ar' target='_blank' rel='noreferrer'><img src={sac} alt='Sociedad Argentina de Cardiología' /></a></Col>
