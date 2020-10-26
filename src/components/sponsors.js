@@ -32,21 +32,28 @@ const Sponsors = () => (
                 <a href='https://www.medicine.abbott/ar/index.html' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={abbott} alt='Abbott' /></a>
             </Col>
         </Row>
-        <Row className='sponsors-row' >
-            <h2 className='main-subtitles'>Platino</h2>
-        </Row>
         <Row className='sponsors-row'>
             <Col md={6} sm={6} xs={6} >
-                <a href='http://www.eccosur.com/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={eccosur} alt='Eccosur' /></a>
+            <Row className='sponsors-row' >
+                <h2 className='main-subtitles'>Platino</h2>
+            </Row>
+            <Row className='sponsors-row'>
+                <Col md={6} sm={6} xs={6} >
+                    <a href='http://www.eccosur.com/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={eccosur} alt='Eccosur' /></a>
+                </Col>
+            </Row>
             </Col>
-        </Row>
-        <Row className='sponsors-row' >
-            <h2 className='main-subtitles'>Oro</h2>
-        </Row>
-        <Row className='sponsors-row' >
+            <Col md={6} sm={6} xs={6} >
+            <Row className='sponsors-row' >
+                <h2 className='main-subtitles'>Oro</h2>
+            </Row>
+
+             <Row className='sponsors-row' >
             <Col md={12} >
                 <a href='https://www.sudamerica.boehringer-ingelheim.com/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={boehringer} alt='Boehringer Ingelheim' /></a>
             </Col>
+             </Row>
+        </Col>
         </Row>
         <Row className='sponsors-row' >
             <h2 className='main-subtitles'>Acompaña</h2>

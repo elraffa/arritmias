@@ -318,7 +318,7 @@ h5 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0.45rem;
   color: inherit;
   font-family: Klavika, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
     Droid Sans, Helvetica Neue, sans-serif;
@@ -751,7 +751,11 @@ ul.mobile-social {
   text-align: center;
   margin-bottom: 30px;
   background-color: white;
-  padding: 40px;
+  padding: 0 40px;
+}
+
+.organizadores {
+  align-items: last baseline;
 }
 
 /* Programa */
@@ -867,7 +871,6 @@ ul.mobile-social {
 
 .img-sponsors {
   max-width: 200px;
-  filter: grayscale(100%);
   transition: filter 500ms;
   cursor: pointer;
 }

@@ -48,10 +48,10 @@ const Header = ({ siteTitle, menuLinks }) => {
           <Menu menuLinks={menuLinks} className='menu mobile-hide' />
           <div style={{ display: 'flex' }}>
             <ul className='social'>
-              {/* <li className='social-element'>12-13 Nov. 2020</li> */}
+              <li className='social-element'>12-13 Nov.</li>
               <li className='btn-inscripciones'><a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones</a></li>
-              <li className='social-element'><a href="https://www.facebook.com/Encuentro-Nacional-de-Arritmias-102559971635631">{<FaFacebook />}</a></li>
-              <li className='social-element'><a href="https://www.instagram.com/encuentro.arritmias/">{<FaInstagram />}</a></li>
+              <li className='social-element'><a href="https://www.facebook.com/Encuentro-Nacional-de-Arritmias-102559971635631" target='_blank' rel='noreferrer'>{<FaFacebook />}</a></li>
+              <li className='social-element'><a href="https://www.instagram.com/encuentro.arritmias/" target='_blank' rel='noreferrer'>{<FaInstagram />}</a></li>
             </ul>
           </div>
 

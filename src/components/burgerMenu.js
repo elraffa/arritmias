@@ -69,6 +69,7 @@ const BurgerMenu = ({ menuLinks }) => {
     <Menu styles={styles} right isOpen={menuOpenState} onStateChange={(state) => stateChangeHandler(state)} >
       <Button variant="outline-light" style={{ textTransform: 'uppercase', display: 'block', margin: '0 auto' }} className='btn-lg btn-inscripciones-mobile'><a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones{<FaCaretRight />}</a></Button>
       <ul>
+        <p>12-13 de noviembre 2020</p>
         {menuLinks.map((link) => (
           <li
             key={link.name}
@@ -87,8 +88,8 @@ const BurgerMenu = ({ menuLinks }) => {
       </ul>
       <img src={logoWhite} alt='Encuentro Nacional de Arritmias' style={{ width: '60%', display: 'block', margin: '0 auto' }} />
       <ul className='mobile-social'>
-        <a href="https://www.facebook.com/Encuentro-Nacional-de-Arritmias-102559971635631">{<FaFacebook />}</a>
-        <a href="https://www.instagram.com/encuentro.arritmias/">{<FaInstagram />}</a>
+        <a href="https://www.facebook.com/Encuentro-Nacional-de-Arritmias-102559971635631" target='_blank' rel='noreferrer'>{<FaFacebook />}</a>
+        <a href="https://www.instagram.com/encuentro.arritmias/" target='_blank' rel='noreferrer'>{<FaInstagram />}</a>
       </ul>
     </Menu>
   )
