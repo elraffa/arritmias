@@ -27,12 +27,14 @@ const Invitados = () => {
         }
     }
     `)
+
     return (
         <div id='invitados' className='invitados'>
             <Row className='sponsors-row' >
                 <h1 className='main-titles'>Invitados</h1>
             </Row>
             <hr></hr>
+
             <Row className='invitados-row'>
                 {invitados.map((invitado, index) => (
                     // index < 4 &&

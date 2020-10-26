@@ -758,7 +758,11 @@ ul.mobile-social {
 }
 
 .organizadores {
-  align-items: last baseline;
+  align-items: center;
+}
+
+.organizadores h6 {
+  margin-bottom: 0 !important;
 }
 
 /* Programa */
