@@ -30,7 +30,7 @@ const Comite = () => (
         <Row className='organizadores'>
             <Col><h6>Comité de Arritmias</h6><a href='https://www.fac.org.ar' target='_blank' rel='noreferrer'><img src={fac} alt='Sociedad Argentina de Cardiología' /></a></Col>
             <Col><h6>Consejo de Arritmias</h6><a href='https://www.sac.org.ar' target='_blank' rel='noreferrer'><img src={sac} alt='Sociedad Argentina de Cardiología' /></a></Col>
-            <Col><h6>Sociedad Argentina de Electrofisiología Cardíaca</h6><a href='https://www.sociedadsadec.org.ar' target='_blank' rel='noreferrer'><img src={sadec} alt='Sociedad Argentina de Cardiología' /></a></Col>
+            <Col><h6>Soc. Arg. de Electrofisiología Cardíaca</h6><a href='https://www.sociedadsadec.org.ar' target='_blank' rel='noreferrer'><img src={sadec} alt='Sociedad Argentina de Cardiología' /></a></Col>
         </Row>
 
     </div >

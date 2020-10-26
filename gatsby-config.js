@@ -84,7 +84,7 @@ module.exports = {
       },
       {
         name: 'Mauricio Scanavacca',
-        country: 'Brasil',
+        country: 'INCOR - San Pablo, Brasil',
         filename: `scanavacca`
       }
     ],

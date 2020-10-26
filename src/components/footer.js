@@ -20,7 +20,7 @@ const Footer = () => (
 
             </Col>
             <Col>
-                <h2 style={{ marginTop: 30}}>Organizan</h2>
+                <h3 style={{ marginTop: 30}}>Organizan</h3>
                 <Row className='organizadores-footer'>
                     
                     <Col md={3}><h6>Comité de Arritmias</h6><a href='https://www.fac.org.ar' target='_blank' rel='noreferrer'><img src={fac} alt='Sociedad Argentina de Cardiología' style={{ maxWidth: 100 }}/></a></Col>

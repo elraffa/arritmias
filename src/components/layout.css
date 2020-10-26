@@ -273,7 +273,8 @@ h2 {
     Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  /* font-size: 1.62671rem; */
+  font-size: clamp(1.62671rem, 6vw, 6rem);
   line-height: 1.1;
 }
 h3 {
@@ -290,7 +291,8 @@ h3 {
     Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  /* font-size: 1.38316rem; */
+  font-size: clamp(1.38316rem, 3vw, 1.38316rem);
   line-height: 1.1;
 }
 h4 {
@@ -307,7 +309,8 @@ h4 {
     Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  font-size: clamp(1.175rem, 3vw, 1.28316rem);
   line-height: 1.1;
 }
 h5 {
@@ -324,7 +327,7 @@ h5 {
     Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
+  font-size: 1rem;
   line-height: 1.1;
 }
 h6 {
@@ -774,7 +777,7 @@ ul.mobile-social {
   color: #444343;
   transition: background-color 1000ms;
   align-self: stretch;
-  max-height: 400px;
+  height: 80%;
 }
 
 .card-clinica {
