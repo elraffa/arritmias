@@ -73,9 +73,9 @@ const Programa = (props) => {
                     </div>
                 </Col>
 
-                <Modal show={clinica} onHide={handleCloseClinica} id='clinica' aria-labelledby="clinica">
+                <Modal size='lg' show={clinica} onHide={handleCloseClinica} id='clinica' aria-labelledby="clinica" dialogClassName='modal-clinica' contentClassName='modal-content-clinica' centered >
                     <Modal.Header closeButton>
-                        <Modal.Title>Clínica</Modal.Title>
+                        <Modal.Title id="clinica">Clínica</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <ul>
@@ -94,7 +94,7 @@ const Programa = (props) => {
                     </Modal.Footer>
                 </Modal>
 
-                <Modal show={ablacion} onHide={handleCloseAblacion} id='ablacion' aria-labelledby="ablacionLabel">
+                <Modal size='lg' show={ablacion} onHide={handleCloseAblacion} id='ablacion' aria-labelledby="ablacionLabel" centered>
                     <Modal.Header closeButton>
                         <Modal.Title>Ablación</Modal.Title>
                     </Modal.Header>
@@ -114,7 +114,7 @@ const Programa = (props) => {
                     </Modal.Footer>
                 </Modal>
 
-                <Modal show={subita} onHide={handleCloseSubita} id='subita'>
+                <Modal size='lg' show={subita} onHide={handleCloseSubita} id='subita' centered>
                     <Modal.Header closeButton>
                         <Modal.Title>Muerte Súbita</Modal.Title>
                     </Modal.Header>
@@ -133,7 +133,7 @@ const Programa = (props) => {
                     </Modal.Footer>
                 </Modal>
 
-                <Modal show={dispositivos} onHide={handleCloseDispositivos} id='dispositivos'>
+                <Modal size='lg' show={dispositivos} onHide={handleCloseDispositivos} id='dispositivos' centered>
                     <Modal.Header closeButton>
                         <Modal.Title>Dispositivos</Modal.Title>
                     </Modal.Header>

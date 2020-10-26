@@ -767,8 +767,7 @@ ul.mobile-social {
 
 /* Programa */
 #programa {
-  scroll-margin-top: 100px;
-  overflow: hidden;
+  scroll-margin-top: 120px;
   margin-top: 100px;
 }
 
@@ -786,6 +785,28 @@ ul.mobile-social {
 
 .card-clinica {
   background-color: #46c8ff;
+}
+
+.modal-clinica {
+  width: 90%;
+}
+
+.modal-content {
+  background-color: white;
+  color: black;
+}
+
+.modal-title {
+  font-family: Klavika, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: #009cde;
 }
 
 .card-ablacion {
