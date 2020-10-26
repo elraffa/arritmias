@@ -12,6 +12,7 @@ import Header from "./header"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./layout.css"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import Footer from './footer'
 
 const Layout = ({ children }) => {
   const { title, menuLinks } = useSiteMetadata()
@@ -22,11 +23,14 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer style={{
-          marginTop: `2rem`
+          marginTop: `2rem`,
+          color: 'white', 
+          textAlign: 'center'
         }}>
+          <Footer />
           © {new Date().getFullYear()}, Encuentro Nacional de Arritmias.
               {` `}
-          Diseño y desarrollo web por <a href="https://www.mktdigitalideas.com">MKTDigital Ideas</a>
+          Diseño y desarrollo web por <a href="https://www.mktdigitalideas.com" style={{ color: 'white' }}><b>MKTDigital Ideas</b></a>
         </footer>
       </div>
 

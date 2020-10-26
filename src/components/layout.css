@@ -896,6 +896,31 @@ ul.mobile-social {
   margin-top: 5px;
 }
 
+/* Footer */
+footer {
+  background-color: #009cde;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.social-footer {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-footer a {
+  color: white;
+  margin: 0 20px;
+}
+
 @keyframes floating {
   0% {
     transform: translate(0, 0px);

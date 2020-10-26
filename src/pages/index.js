@@ -9,6 +9,7 @@ import Invitados from "../components/invitados"
 import Programa from '../components/programa'
 import Sponsors from '../components/sponsors'
 import Comite from '../components/comite'
+import Footer from '../components/footer'
 
 
 const IndexPage = () => (
