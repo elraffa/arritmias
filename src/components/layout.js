@@ -28,9 +28,11 @@ const Layout = ({ children }) => {
           textAlign: 'center'
         }}>
           <Footer />
+          <div style={{ backgroundColor: 'black' }}>
           © {new Date().getFullYear()}, Encuentro Nacional de Arritmias.
               {` `}
           Diseño y desarrollo web por <a href="https://www.mktdigitalideas.com" style={{ color: 'white' }}><b>MKTDigital Ideas</b></a>
+          </div>
         </footer>
       </div>
 
