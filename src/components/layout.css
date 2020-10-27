@@ -918,15 +918,20 @@ ul.mobile-social {
   margin: 10px 0 20px 0;
 }
 
+@-moz-document url-prefix() {
+  .flags {
+    align-items: start;
+  }
+}
+
 .flags img {
   cursor: pointer;
 }
 
-/* .invitado-selection {
-  display: flex;
+.invitado-selection {
   align-items: center;
   justify-content: center;
-} */
+}
 
 .invitados-img {
   border-radius: 150px;
@@ -935,10 +940,13 @@ ul.mobile-social {
 }
 
 .invitados-row {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 20;
   justify-content: center;
   text-align: center;
+  width: 100vw;
 }
 
 .invitado-name {
@@ -1049,6 +1057,12 @@ footer a:hover {
 
   .comite {
     padding: 0 40px 10px 40px;
+  }
+
+  .invitados-img {
+    border-radius: 150px;
+    width: 70vw;
+    margin: 0 auto 20px auto;
   }
 
   .img-sponsors {

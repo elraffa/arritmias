@@ -46,9 +46,9 @@ const Invitados = () => {
 
     return (
         <div id='invitados' className='invitados'>
-            <Row className='sponsors-row' >
+            <div className='invitados-row' >
                 <h1 className='main-titles'>Invitados</h1>
-            </Row>
+            </div>
 
             <hr></hr>
             <Row className='flags'>
@@ -60,10 +60,9 @@ const Invitados = () => {
          
             </Row>
 
-            <Row className='invitados-row'>
+            <div className='invitados-row'>
                 { state.flag === 'todos' ?                 
                 invitados.map((invitado, index) => (
-                    // index < 4 &&
                     <Col md={3} sm={6} xs={6} >
                         {data.allFile.edges.map(({ node }) =>
                             (
@@ -86,11 +85,10 @@ const Invitados = () => {
                     )}
                     <h3 className='invitado-name'>{invitado.name}</h3>
                     <p>{invitado.country}</p>
-                </div>
-   
-            )) 
+                    </div>
+                 )) 
                 }
-                </Row>
+                </div>
             {/* Code if need to modify */}
             {/* 
             <Row className='invitados-row'>
