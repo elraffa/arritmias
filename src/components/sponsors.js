@@ -1,7 +1,7 @@
 import React from 'react'
 import abbott from '../images/sponsors/abbott.png'
 import boston from '../images/sponsors/boston.png'
-import biotronik from '../images/sponsors/biotronik_logo.png'
+import biotronik from '../images/sponsors/biotronik.png'
 import medtronic from '../images/sponsors/medtronic.png'
 import eccosur from '../images/sponsors/logo_eccosur.svg'
 import boehringer from '../images/sponsors/boehringer.png'
@@ -33,7 +33,7 @@ const Sponsors = () => {
             <h2 className='main-subtitles' >Diamante</h2>
         </Row>
         <Row className='sponsors-row'>
-            <Col md={3} sm={6} xs={6} >
+            <Col md={3} sm={12} xs={12} >
 
 
                 <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
@@ -41,13 +41,13 @@ const Sponsors = () => {
                 </OverlayTrigger>
                 
             </Col>
-            <Col md={3} sm={6} xs={6} >
+            <Col md={3} sm={12} xs={12} >
                 <a href='https://www.biotronik.com/es-es/products' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={biotronik} alt='Biotronik' /></a>
             </Col>
-            <Col md={3} sm={6} xs={6} >
+            <Col md={3} sm={12} xs={12} >
                 <a href='https://www.bostonscientific.com/es-ar/home.html' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors boston' src={boston} alt='Boston Scientific' /></a>
             </Col>
-            <Col md={3} sm={6} xs={6} >
+            <Col md={3} sm={12} xs={12} >
                 <a href='https://www.medtronic.com/ar-es/index.html' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={medtronic} alt='Medtronic' /></a>
             </Col>
            

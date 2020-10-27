@@ -908,14 +908,15 @@ ul.mobile-social {
 
 #invitados {
   margin-top: 100px;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 120px;
 }
 
 .flags {
   align-items: end;
   justify-content: space-evenly;
   padding: 20px;
-  margin: 10px 0 20px 0;
+  margin: 15px auto;
+  width: 50%;
 }
 
 @-moz-document url-prefix() {
@@ -1061,7 +1062,7 @@ footer a:hover {
 
   .invitados-img {
     border-radius: 150px;
-    width: 70vw;
+    width: 40vw;
     margin: 0 auto 20px auto;
   }
 
