@@ -12,7 +12,8 @@ const Comite = () => (
         <div className='floating' style={{ maxWidth: 250, margin: '0 auto', textAlign: 'center', fontSize: 80, color: '#b50017' }} >
         <FaHeartbeat />
         </div>
-        <h3 style={{ marginTop: 20, borderBottom: '1px solid #ccc' }}>Comité Organizador y Científico</h3>
+        <h3 style={{ marginTop: 20, borderBottom: '1px solid #ccc', marginBottom: '0.7em' }}>Comité Organizador y Científico</h3>
+        <h6>(En orden alfabético)</h6>
 
         <h4>Presidentes:</h4>
         <h5>Marcelo Coll (FAC)</h5>
@@ -29,7 +30,7 @@ const Comite = () => (
         <h4>Organizan</h4>
 
         <Row className='organizadores'>
-            <Col ><h6>Comité de Arritmias</h6></Col>
+            <Col ><h6>Comité<br></br> de Arritmias</h6></Col>
             <Col><h6>Consejo de Arritmias</h6></Col>
             <Col><h6>Soc. Arg. de Electrofisiología Cardíaca</h6></Col>
         </Row>

@@ -61,11 +61,11 @@ const Sponsors = () => (
             <h2 className='main-subtitles'>Acompañan</h2>
         </Row>
         <Row className='sponsors-row'>
-            <Col md={6} sm={12} xs={12}>
-                <a href='https://www.roemmers.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={roemmers} alt='Roemmers' /></a>
+             <Col md={6} sm={12} xs={12}>
+                <a href='https://www.exo.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={exo} alt='Exo' /></a>
             </Col>
             <Col md={6} sm={12} xs={12}>
-                <a href='https://www.exo.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={exo} alt='Exo' /></a>
+                <a href='https://www.roemmers.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={roemmers} alt='Roemmers' /></a>
             </Col>
         </Row>
     </div>

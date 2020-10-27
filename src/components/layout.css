@@ -622,6 +622,20 @@ pre tt:after {
 }
 
 /* Sticky Header */
+.banner-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  background-color: #b50017;
+  color: white;
+}
+
+.banner-top h4 {
+  margin-bottom: 0 !important;
+  padding: 3px;
+  text-align: center;
+}
+
 #header.reduce .social {
   font-size: 90%;
   height: 50%;

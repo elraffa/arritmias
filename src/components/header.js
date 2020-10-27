@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React, { useEffect } from "react"
 import Logo from './logo';
 import Menu from './menu';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaCalendarCheck } from 'react-icons/fa';
 import BurgerMenu from './burgerMenu'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,6 +29,10 @@ const Header = ({ siteTitle, menuLinks }) => {
       <div className='desktop-hide'>
         <BurgerMenu menuLinks={menuLinks} />
       </div>
+      <div class='banner-top'>
+        <FaCalendarCheck /> 
+        <h4> 12-13 de noviembre de 2020</h4>
+      </div>
       <Row style={{ margin: 0 }} className='header-row'>
 
         <Col md={3} sm={10} xs={10} style={{ margin: 0 }}>
@@ -48,7 +52,6 @@ const Header = ({ siteTitle, menuLinks }) => {
           <Menu menuLinks={menuLinks} className='menu mobile-hide' />
           <div style={{ display: 'flex' }}>
             <ul className='social'>
-              <li className='social-element'>12-13 Nov.</li>
               <li className='btn-inscripciones'><a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones</a></li>
               <li className='social-element'><a href="https://www.facebook.com/Encuentro-Nacional-de-Arritmias-102559971635631" target='_blank' rel='noreferrer'>{<FaFacebook />}</a></li>
               <li className='social-element'><a href="https://www.instagram.com/encuentro.arritmias/" target='_blank' rel='noreferrer'>{<FaInstagram />}</a></li>

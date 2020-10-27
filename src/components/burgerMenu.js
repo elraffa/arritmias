@@ -13,7 +13,7 @@ var styles = {
     width: '26px',
     height: '20px',
     right: '20px',
-    top: '24px'
+    top: '32px'
   },
   bmBurgerBars: {
     background: '#AE0018'
