@@ -1066,12 +1066,12 @@ footer a:hover {
     margin: 0 auto 20px auto;
   }
 
-  .img-sponsors {
-    max-width: 150px;
+  .flags {
+    width: 100%;
   }
 
-  .boston {
-    max-width: 100px;
+  .img-sponsors {
+    max-width: 150px;
   }
 }
 

@@ -10,10 +10,10 @@ import logoWhite from '../images/logo-white.png';
 var styles = {
   bmBurgerButton: {
     position: 'fixed',
-    width: '26px',
-    height: '20px',
+    width: '28px',
+    height: '22px',
     right: '20px',
-    top: '32px'
+    top: '45px'
   },
   bmBurgerBars: {
     background: '#AE0018'
@@ -69,7 +69,6 @@ const BurgerMenu = ({ menuLinks }) => {
     <Menu styles={styles} right isOpen={menuOpenState} onStateChange={(state) => stateChangeHandler(state)} >
       <Button variant="outline-light" style={{ textTransform: 'uppercase', display: 'block', margin: '0 auto' }} className='btn-lg btn-inscripciones-mobile'><a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones{<FaCaretRight />}</a></Button>
       <ul>
-        <p>12-13 de noviembre 2020</p>
         {menuLinks.map((link) => (
           <li
             key={link.name}
@@ -87,6 +86,7 @@ const BurgerMenu = ({ menuLinks }) => {
         ))}
       </ul>
       <img src={logoWhite} alt='Encuentro Nacional de Arritmias' style={{ width: '60%', display: 'block', margin: '0 auto' }} />
+      <p style={{ color: 'white', marginBottom: 0, fontSize: '0.74em' }}>12-13 de noviembre 2020</p>
       <ul className='mobile-social'>
         <a href="https://www.facebook.com/Encuentro-Nacional-de-Arritmias-102559971635631" target='_blank' rel='noreferrer'>{<FaFacebook />}</a>
         <a href="https://www.instagram.com/encuentro.arritmias/" target='_blank' rel='noreferrer'>{<FaInstagram />}</a>
