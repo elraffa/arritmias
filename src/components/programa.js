@@ -73,7 +73,7 @@ const Programa = (props) => {
                     </div>
                 </Col>
 
-                <Modal size='lg' show={clinica} onHide={handleCloseClinica} id='clinica' aria-labelledby="clinica" dialogClassName='modal-clinica' contentClassName='modal-content-clinica' centered >
+                <Modal size='lg' show={clinica} onHide={handleCloseClinica} id='clinica' aria-labelledby="clinica" centered >
                     <Modal.Header closeButton>
                         <Modal.Title id="clinica">Clínica</Modal.Title>
                     </Modal.Header>
