@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap'
 import Img from 'gatsby-image'
+import brasil from '../images/brasil.png'
+import usa from '../images/usa.png'
+import chile from '../images/chile.png'
+import espana from '../images/espana.png'
 
 
 const Invitados = () => {
@@ -28,15 +32,37 @@ const Invitados = () => {
     }
     `)
 
+    const [ state, setState ] = useState({
+        flag: ''
+    });
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        const place = e.target.id;
+        setState({
+            flag: place
+        })
+    }
+
     return (
         <div id='invitados' className='invitados'>
             <Row className='sponsors-row' >
                 <h1 className='main-titles'>Invitados</h1>
             </Row>
+
             <hr></hr>
+            <Row className='flags'>
+                <Button variant='info' id='todos' onClick={handleClick}>Todos</Button>
+                <img src={brasil} width='50px' onClick={handleClick} id='brasil'/>
+                <img src={usa} width='50px' onClick={handleClick} id='usa'/>
+                <img src={espana} width='50px' onClick={handleClick} id='espana'/>
+                <img src={chile} width='50px' onClick={handleClick} id='chile'/>
+         
+            </Row>
 
             <Row className='invitados-row'>
-                {invitados.map((invitado, index) => (
+                { state.flag === 'todos' ?                 
+                invitados.map((invitado, index) => (
                     // index < 4 &&
                     <Col md={3} sm={6} xs={6} >
                         {data.allFile.edges.map(({ node }) =>
@@ -48,7 +74,22 @@ const Invitados = () => {
                         <h3 className='invitado-name'>{invitado.name}</h3>
                         <p>{invitado.country}</p>
                     </Col>
-                ))}
+                )) : 
+               invitados.map((invitado, index) => (
+                invitado.flag === state.flag &&
+                <div className='invitado-selection' >
+                    {data.allFile.edges.map(({ node }) =>
+                        (
+                            invitado.filename === node.base.split('.')[0] &&
+                            <Img fluid={node.childImageSharp.fluid} alt={node.base.split('.')[0]} className='invitados-img' />
+                        )
+                    )}
+                    <h3 className='invitado-name'>{invitado.name}</h3>
+                    <p>{invitado.country}</p>
+                </div>
+   
+            )) 
+                }
                 </Row>
             {/* Code if need to modify */}
             {/* 

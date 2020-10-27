@@ -15,6 +15,7 @@ export const useSiteMetadata = () => {
                           name
                           country
                           filename
+                          flag
                         }
                         programa {
                           name

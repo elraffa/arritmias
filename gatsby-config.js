@@ -49,7 +49,7 @@ module.exports = {
         name: 'Fermín García',
         country: 'Pennsylvania Hospital - EE.UU.',
         filename: 'garcia',
-        flag: 'espana'
+        flag: 'usa'
       },
       {
         name: 'Carlos Grande',

@@ -911,6 +911,23 @@ ul.mobile-social {
   scroll-margin-top: 100px;
 }
 
+.flags {
+  align-items: end;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 10px 0 20px 0;
+}
+
+.flags img {
+  cursor: pointer;
+}
+
+/* .invitado-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
 .invitados-img {
   border-radius: 150px;
   max-width: 200px;
