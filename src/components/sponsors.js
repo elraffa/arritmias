@@ -7,10 +7,23 @@ import eccosur from '../images/sponsors/logo_eccosur.svg'
 import boehringer from '../images/sponsors/boehringer.png'
 import roemmers from '../images/sponsors/roemmers.png'
 import exo from '../images/sponsors/logo-exo.png'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, OverlayTrigger, Popover } from 'react-bootstrap'
 
 
-const Sponsors = () => (
+const Sponsors = () => {
+
+    const popover = (
+        <Popover id="popover-positioned-bottom">
+            <Popover.Title as="h3">Abbott</Popover.Title>
+            <Popover.Content style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
+            <p><a href='https://www.medicine.abbott/ar/index.html' target='_blank' rel='noreferrer'>Link uno</a></p>
+            <p><a href='https://www.medicine.abbott/ar/index.html' target='_blank' rel='noreferrer'>Link dos</a></p>
+
+            </Popover.Content>
+        </Popover>
+        );
+    
+    return (
     <div id='sponsors' className='sponsors' >
         <Row className='sponsors-row' >
             <h1 className='main-titles'>Sponsors</h1>
@@ -21,7 +34,12 @@ const Sponsors = () => (
         </Row>
         <Row className='sponsors-row'>
             <Col md={3} sm={6} xs={6} >
-                <a href='https://www.medicine.abbott/ar/index.html' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={abbott} alt='Abbott' /></a>
+
+
+                <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+                    <img className='img-fluid img-sponsors' src={abbott} alt='Abbott' />
+                </OverlayTrigger>
+                
             </Col>
             <Col md={3} sm={6} xs={6} >
                 <a href='https://www.biotronik.com/es-es/products' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={biotronik} alt='Biotronik' /></a>
@@ -70,5 +88,6 @@ const Sponsors = () => (
         </Row>
     </div>
 )
+    }
 
 export default Sponsors;
