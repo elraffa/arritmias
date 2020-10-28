@@ -636,6 +636,24 @@ pre tt:after {
   text-align: center;
 }
 
+.date-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  color: black;
+}
+
+.date-top h5 {
+  margin-bottom: 0 !important;
+  padding: 2px;
+  text-align: center;
+}
+
+#header.reduce .date-top,
+#header.reduce h5 {
+  font-size: 0.8rem;
+}
+
 #header.reduce .social {
   font-size: 90%;
   height: 50%;
@@ -647,7 +665,7 @@ pre tt:after {
 }
 
 #header.reduce .logo {
-  width: 70%;
+  width: 80%;
 }
 
 .header-row {
@@ -656,7 +674,7 @@ pre tt:after {
 }
 
 #header.reduce .header-row {
-  height: 70px;
+  height: 80px;
 }
 
 .header-right {
