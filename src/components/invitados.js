@@ -33,7 +33,7 @@ const Invitados = () => {
     `)
 
     const [ state, setState ] = useState({
-        flag: ''
+        flag: 'todos'
     });
 
     const handleClick = (e) => {
