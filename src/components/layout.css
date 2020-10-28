@@ -1074,6 +1074,12 @@ footer a:hover {
     display: none !important;
   }
 
+  .date-top-mobile {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.6em !important;
+  }
+
   .comite {
     padding: 0 40px 10px 40px;
   }

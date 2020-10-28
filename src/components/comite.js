@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHeartbeat } from 'react-icons/fa';
+import { FaHeartbeat, FaCalendarCheck } from 'react-icons/fa';
 import { Row, Col } from 'react-bootstrap'
 import fac from '../images/logo-fac-1.png'
 import sac from '../images/logo-sac.png'
@@ -8,7 +8,11 @@ import sadec from '../images/logo-sadec.png'
 const Comite = () => (
 
     <div className="comite">
-        <span className='btn-inscripciones desktop-hide'><a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones</a></span>
+        <div className='btn-inscripciones desktop-hide'>
+              <div class='date-top-mobile'>
+                <FaCalendarCheck /><h4> 12-13 de nov. 2020</h4>
+              </div>
+            <a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones</a></div>
         <div className='floating' style={{ maxWidth: 250, margin: '0 auto', textAlign: 'center', fontSize: 80, color: '#b50017' }} >
         <FaHeartbeat />
         </div>
