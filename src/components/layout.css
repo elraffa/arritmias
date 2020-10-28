@@ -1080,6 +1080,10 @@ footer a:hover {
     font-size: 1.6em !important;
   }
 
+  .btn-inscripciones a {
+    font-size: 1.5em;
+  }
+
   .comite {
     padding: 0 40px 10px 40px;
   }
