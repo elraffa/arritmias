@@ -1,12 +1,35 @@
 import React from 'react'
+import speranza from '../images/firma-speranza.png'
 
 const welcome = () => (
 
     <section>
         <div id='bienvenida' className='anchor' style={{ scrollMarginTop: 120 }}></div>
         <h1 className='main-titles'>Bienvenidos</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis molestie elementum. Donec cursus augue non nibh condimentum, sed lobortis tellus elementum. Proin quis volutpat metus. Suspendisse posuere ligula pellentesque, molestie tortor sit amet, laoreet sem. Phasellus sem ipsum, efficitur nec eros sit amet, elementum malesuada nisl. Maecenas maximus in lectus vitae semper. Fusce venenatis tempus eros non sodales. Nulla a felis vel turpis aliquam ultrices eu eu mi. Vestibulum finibus, tellus ac aliquam vehicula, erat purus pretium tellus, sit amet facilisis lorem augue et diam. Donec sollicitudin condimentum leo, nec ornare ipsum eleifend id. Aenean eget porttitor felis. Sed facilisis justo a lacus tempus, egestas facilisis ante aliquet. Morbi nec efficitur nibh, ac feugiat nulla. Etiam aliquam orci a nisi sollicitudin, vel tincidunt elit lacinia.</p>
-        <p>Proin semper mi nulla, eu hendrerit diam sodales vitae. Donec bibendum nunc vitae tortor hendrerit, et elementum metus laoreet. Donec sodales nibh sit amet enim sollicitudin sollicitudin. Mauris nec scelerisque lacus. Maecenas euismod efficitur massa, ut finibus lorem. Nunc ut est quis ipsum malesuada vehicula. Praesent ut nisl feugiat, eleifend erat ac, tempor ligula. Praesent viverra efficitur ligula, et facilisis tellus gravida ac. Praesent et dolor orci. Integer vitae orci ut est sagittis pretium. Vivamus tempor ante eget diam cursus tincidunt. Praesent consequat mollis erat nec faucibus. Ut mollis justo nec facilisis congue. Pellentesque a odio eu mi cursus blandit non vitae enim. Etiam tincidunt mauris et justo vulputate suscipit.</p>
+        <h4>Estimadas/os Colegas:</h4>
+        <p> Es un placer para nosotros darles la bienvenida al Encuentro Nacional de Arritmias 2020, este evento que supo ser un clásico de la electrofisiología en nuestro país hasta el año 2011, momento en el que fue reemplazado por nuestro prestigioso Congreso Argentino de Arritmias, el cual fue prorrogado para el año 2021 para continuar su modalidad presencial.</p>
+        <p>
+        Con el espíritu de aquel encuentro tradicional, más el aporte de la tecnología, imprescindible en estos largos meses de aislamiento social, hemos diseñado un espacio que nos posibilite compartir conocimientos entre profesionales, interactuar con prestigiosos disertantes nacionales e internacionales en diversos temas de actualidad, e integrar a las empresas en una exposición virtual en 3D donde podrán presentarnos sus últimos avances en dispositivos y fármacos.
+        </p>
+        <p>Como ya es costumbre, la cardiología clínica y la pediatría tendrá sus sesiones especiales, como así también los técnicos y enfermeros, conformando un promisorio programa científico con alto nivel académico.</p>
+        <p>Anhelamos que disfruten este Encuentro Nacional de Arritmias, y que podamos compartir la actualidad de nuestra especialidad en tiempos difíciles como el que nos toca vivir.</p>
+        <div class='firmas'>
+            <div class='firma-coll'>
+                <img src={speranza} alt='' width='160'/>
+                <h5>Marcelo Coll</h5>
+                <h6>Director Comité <br></br>de Arritmias de FAC</h6>
+            </div>
+            <div class='firma-doiny'>
+                <img src={speranza} alt='' width='160'/>
+                <h5>David Doiny</h5>
+                <h6>Director Comsejo <br></br>de Arritmias de SAC</h6>
+            </div>
+            <div class='firma-speranza'>
+                <img src={speranza} alt='' width='160'/>
+                <h5>Ricardo Speranza</h5>
+                <h6>Presidente <br></br>de SADEC</h6>
+            </div>
+        </div>
 
     </section>
 
