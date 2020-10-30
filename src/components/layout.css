@@ -1064,6 +1064,10 @@ footer a:hover {
   border-radius: 5px;
 }
 
+.footer-white img {
+  margin: 10px 0 0 0;
+}
+
 .organizadores-prof-footer {
   align-items: baseline;
   justify-content: center;
