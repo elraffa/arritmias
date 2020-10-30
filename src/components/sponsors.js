@@ -6,7 +6,7 @@ import medtronic from '../images/sponsors/medtronic.png'
 import eccosur from '../images/sponsors/logo_eccosur.svg'
 import boehringer from '../images/sponsors/boehringer.png'
 import roemmers from '../images/sponsors/roemmers.png'
-import exo from '../images/sponsors/logo-exo.png'
+import synchromax from '../images/sponsors/synchromax.png'
 import { Row, Col, OverlayTrigger, Popover } from 'react-bootstrap'
 
 
@@ -15,9 +15,9 @@ const Sponsors = () => {
     const popover = (
         <Popover id="popover-positioned-bottom">
             <Popover.Title as="h3">Abbott</Popover.Title>
-            <Popover.Content style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
-            <p><a href='https://www.medicine.abbott/ar/index.html' target='_blank' rel='noreferrer'>Link uno</a></p>
-            <p><a href='https://www.medicine.abbott/ar/index.html' target='_blank' rel='noreferrer'>Link dos</a></p>
+            <Popover.Content style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+            <p style={{ marginRight: 15 }}><a href='https://www.cardiovascular.abbott/int/en/home.html' target='_blank' rel='noreferrer'>CRM/EP</a></p>
+            <p><a href='https://www.medicine.abbott/ar/index.html' target='_blank' rel='noreferrer'>EPD</a></p>
 
             </Popover.Content>
         </Popover>
@@ -79,11 +79,11 @@ const Sponsors = () => {
             <h2 className='main-subtitles'>Acompañan</h2>
         </Row>
         <Row className='sponsors-row'>
-             <Col md={6} sm={12} xs={12}>
-                <a href='https://www.exo.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={exo} alt='Exo' /></a>
-            </Col>
             <Col md={6} sm={12} xs={12}>
                 <a href='https://www.roemmers.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={roemmers} alt='Roemmers' /></a>
+            </Col>
+            <Col md={6} sm={12} xs={12}>
+                <a href='https://www.synchromax.com/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={synchromax} alt='Synchromax' /></a>
             </Col>
         </Row>
     </div>

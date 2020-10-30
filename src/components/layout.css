@@ -801,7 +801,7 @@ ul.mobile-social {
 
 .firmas {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   justify-content: space-evenly;
   text-align: center;
 }
@@ -1048,8 +1048,48 @@ footer a:hover {
 .organizadores-footer {
   align-items: last baseline;
   justify-content: center;
-  margin: 50px 10px 0px 10px;
+  margin: 20px 10px 0px 10px;
   padding: 10px;
+}
+
+.footer-white {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.organizadores-prof-footer {
+  align-items: baseline;
+  justify-content: center;
+  margin: 20px 10px 0px 10px;
+  padding: 10px;
+}
+
+.consultas {
+  display: block;
+  font-size: 0.8em;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 20px 0;
+}
+
+.consultas p,
+.consultas img {
+  margin: 10px;
+  color: black;
+}
+
+.consultas a {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.consultas a:hover {
+  color: black;
 }
 
 @keyframes floating {

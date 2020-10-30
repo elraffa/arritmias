@@ -1,5 +1,7 @@
 import React from 'react'
 import speranza from '../images/firma-speranza.png'
+import coll from '../images/firma-coll.png'
+import doiny from '../images/firma-doiny.png'
 
 const welcome = () => (
 
@@ -15,14 +17,14 @@ const welcome = () => (
         <p>Anhelamos que disfruten este Encuentro Nacional de Arritmias, y que podamos compartir la actualidad de nuestra especialidad en tiempos difíciles como el que nos toca vivir.</p>
         <div class='firmas'>
             <div class='firma-coll'>
-                <img src={speranza} alt='' width='160'/>
+                <img src={coll} alt='' /> 
                 <h5>Marcelo Coll</h5>
                 <h6>Director Comité <br></br>de Arritmias de FAC</h6>
             </div>
             <div class='firma-doiny'>
-                <img src={speranza} alt='' width='160'/>
+                <img src={doiny} alt='' /> 
                 <h5>David Doiny</h5>
-                <h6>Director Comsejo <br></br>de Arritmias de SAC</h6>
+                <h6>Director Consejo <br></br>de Arritmias de SAC</h6>
             </div>
             <div class='firma-speranza'>
                 <img src={speranza} alt='' width='160'/>
