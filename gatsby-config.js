@@ -71,6 +71,12 @@ module.exports = {
         flag: 'brasil'
       },
       {
+        name: 'Leonardo Liberman',
+        country: 'Morgan Stanley Children\'s Hospital - Nueva York, Estados Unidos',
+        filename: 'liberman',
+        flag: 'usa'
+      },
+      {
         name: 'José Luis Merino',
         country: 'Hospital Universitario la Paz - Madrid, España',
         filename: 'merino',
@@ -83,10 +89,22 @@ module.exports = {
         flag: 'espana'
       },
       {
+        name: 'Rodrigo Nehgme',
+        country: 'Arnold Palmer Hospital For Children - Florida, Estados Unidos',
+        filename: 'nehgme',
+        flag: 'usa'
+      },
+      {
         name: 'José Carlos Pachón Mateos',
         country: 'Hospital del Corazón – San Pablo, Brasil',
         filename: 'pachon',
         flag: 'brasil'
+      },
+      {
+        name: 'Pablo Moriña Vázquez',
+        country: 'Hospital Juan Ramón Jiménez - Huelva, España',
+        filename: 'vazquez',
+        flag: 'espana'
       },
       {
         name: 'Armando Pérez Silva',

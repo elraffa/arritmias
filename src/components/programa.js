@@ -10,6 +10,8 @@ const Programa = (props) => {
     const [ablacion, setAblacion] = useState(false);
     const [dispositivos, setDispositivos] = useState(false);
     const [subita, setSubita] = useState(false);
+    const [pediatria, setPediatria] = useState(false);
+    const [tecnicos, setTecnicos] = useState(false);
 
     const handleCloseClinica = () => setClinica(false);
     const handleShowClinica = () => setClinica(true);
@@ -19,6 +21,11 @@ const Programa = (props) => {
     const handleShowDispositivos = () => setDispositivos(true);
     const handleCloseSubita = () => setSubita(false);
     const handleShowSubita = () => setSubita(true);
+    const handleClosePediatria = () => setPediatria(false);
+    const handleShowPediatria = () => setPediatria(true);
+    const handleCloseTecnicos = () => setTecnicos(false);
+    const handleShowTecnicos = () => setTecnicos(true);
+
 
 
     return (
@@ -33,6 +40,14 @@ const Programa = (props) => {
                 <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowClinica} data-target="#clinica" >
                     <div className='card card-clinica'>
                         <h4 id='h4'>Clínica</h4>
+                        <div className='chevron-right'>
+                            <FaChevronRight />
+                        </div>
+                    </div>
+                </Col>
+                <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowSubita}  >
+                    <div className='card card-subita'>
+                        <h4 id='h4'>Muerte Súbita</h4>
                         <div className='chevron-right'>
                             <FaChevronRight />
                         </div>
@@ -54,22 +69,21 @@ const Programa = (props) => {
                         </div>
                     </div>
                 </Col>
-                <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowSubita}  >
-                    <div className='card card-subita'>
-                        <h4 id='h4'>Muerte Súbita</h4>
+               
+                <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowPediatria} >
+                    <div className='card card-pediatria'>
+                        <h4 id='h4'>Arritmias en Pediatría</h4>
                         <div className='chevron-right'>
                             <FaChevronRight />
                         </div>
                     </div>
                 </Col>
-                <Col md={4} sm={12} xs={12} className='programa'  >
-                    <div className='card card-pediatria'>
-                        <h4 id='h4'>Arritmias en Pediatría</h4>
-                    </div>
-                </Col>
-                <Col md={4} sm={12} xs={12} className='programa'  >
+                <Col md={4} sm={12} xs={12} className='programa' onClick={handleShowTecnicos} >
                     <div className='card card-tecnicos'>
                         <h4 id='h4'>Ses. p/Técnicos y Enfermeros</h4>
+                        <div className='chevron-right'>
+                            <FaChevronRight />
+                        </div>
                     </div>
                 </Col>
 
@@ -78,14 +92,23 @@ const Programa = (props) => {
                         <Modal.Title id="clinica">Clínica</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <ul>
-                            <li>Fibrilación auricular: - Manejo de la FA asintomática.</li>
-                            <ul>
-                                <li>¿Qué nos indican las nuevas guías europeas de FA? </li>
-                                <li>Manejo de la Anticoagulación en FA.</li>
-                            </ul>
-                            <li>Síncope Reflejo. Monitorización electrocardiográfica en el Sincope: invasiva y no invasiva – Indicación y modo de estimulación cardíaca.</li>
-                        </ul>
+                      
+                            <h4>CONDUCTA ACTUAL EN WPW ASINTOMATICO</h4>
+
+                            <h4>SINCOPE</h4>  
+                            <p>CARDIONEUROMODULACION: INDICACIÓN EN LAS BRADIARRITMIAS FUNCIONALES.</p> 
+                            
+                            <p>SELECCIÓN DE PACIENTES PARA ESTIMULACION EN SÍNCOPE NEUROMEDIADO</p>                   
+
+                            <h4>ARRITMIA VENTRICULAR CLINICA</h4>
+                            <p>ALGORITMOS PARA LA IDENTIFICACION DEL ORIGEN DE LA EV IDIOPATICA</p>
+
+                            <h5>Extrasístoles Ventriculares Frecuente. ¿Debemos tratarlas?</h5>
+
+                            <h4>FIBRILACION AURICULAR CLINICA</h4>
+                            <p>NOVEDADES DE LAS GUIAS 2020</p>
+                            <p>FIBRILACIÓN AURICULAR ASINTOMATICA. MANEJO ACTUAL</p>
+
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleCloseClinica}>
@@ -99,13 +122,18 @@ const Programa = (props) => {
                         <Modal.Title>Ablación</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <ul>
-                            <li>Ablación de FA Persistente</li>
-                            <li>Ablación de FA en Insuficiencia Cardíaca.</li>
-                            <li>Avances recientes en la Ablación de la Taquicardia Ventricular. Abordaje endo-epicardico.</li>
-                            <li>Mapas de alta densidad. Cuándo y cómo utilizarlos.</li>
-                            <li>Rol de las imágenes para una ablación más segura.</li>
-                        </ul>
+                        <h4>DESAFIOS EN LA ABL DE TPS. CUANDO LO SENCILLO SE VUELVE COMPLEJO.</h4>
+                        <h4>FA INVASIVA</h4>
+                        <p>ABLACION DE FIBRILACIÓN AURICULAR PERSISTENTE: ESTADO ACTUAL</p>
+                        <p>ABLACION DE FIBRILACIÓN AURICULAR EN INSUFICIENCIA CARDIACA</p>
+                        <h4>TV INVASIVA</h4>
+                        <p>ABLACION DE EXTRASISTOLES VENTRICULARES DE MUSCULOS PAPILARES</p>
+                        <p>ARRITMIAS VENTRICULARES DEL SUMMIT DEL VENTRICULO IZQUIERDO. Consideraciones anatómicas y desafíos de la ablación.</p>
+                        <p>ECOCARDIOGRAMA INTRACARDIACO: utilidad en distintos escenarios</p>
+
+                        <h4>TV INVASIVA II</h4>
+                        <p>Ablación de Arritmias Ventriculares en Miocardiopatía Isquémico/necrótica </p>
+                        <p>ABLACIÓN ENDO EPICARDICA en MIOCARDIOPATIA Chagásica.</p>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleCloseAblacion}>
@@ -119,11 +147,8 @@ const Programa = (props) => {
                         <Modal.Title>Muerte Súbita</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <ul>
-                            <li>Prevención de Muerte Súbita. Nuevos predictores en 2020. </li>
-                            <li>Arritmias en pediatría</li>
-                            <li>Sesiones para técnicos y enfermeros</li>
-                        </ul>
+                        <p>ESTRATIFICACION DE RIESGO EN DEPORTISTAS Post Covid</p>
+                        <p>ESTRATIFICACION DE RIESGO EN MIOCARDIOPATÍA HIPERTROFICA</p>
                     </Modal.Body>
 
                     <Modal.Footer>
@@ -138,22 +163,59 @@ const Programa = (props) => {
                         <Modal.Title>Dispositivos</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <ul>
-                            <li>Sincronía eléctrica: métodos actuales para evaluar sincronía ventricular. </li>
-                            <li>TRC indicaciones convencionales y no convencionales: ¿Qué hay de nuevo?</li>
-                            <li>Nuevos sitios de estimulación: ¿Dónde implantar para optimizar resultados?</li>
-                            <li>Monitoreo remoto de pacientes con dispositivos cardiacos implantables.</li>
-                            <li>Extracción de Electrodos: “Estrategias y desafíos en procedimientos complejos”</li>
-                        </ul>
+                    <h4>Avances en Resincronizacion Cardiaca</h4>
+                    <h4>TERAPIA DE RESINCRONIZACIÓN CARDIACA EN SITUACIONES COMPLEJAS</h4>
+                    <p>Resincronización mediante estimulación hisiana y rama izquierda</p>
+                        CDI Subcutáneo " ¿Se han ampliado las indicaciones?"
+                    <h4>Extracción Transvenosa de Electrodos.</h4>
+                    <p>EXTRACCIÓN DE CATETERES EN OCTOGENARIOS: DESAFIOS Y CONSEJOS.</p>
+                    <p>RESULTADOS ACTUALES Y TRATAMIENTO DE LAS COMPLICACIONES.</p>
+                    <h4>OTRA MIRADA DE LA ELECTROFISIOLOGÍA CARDIACA (MESA MUJERES)</h4>
+                    <h5>ARRITMIAS Y EMBARAZO</h5>
+                    <p>VALOR DE LAS TECNICAS DE IMÁGENES EN LA ABLACIÓN DE LA FIBRILACIÓN AURICULAR Y DE LA TAQUICARDIA VENTRICULAR</p>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleCloseDispositivos}>
                             Cerrar
-                    </Button>
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
+
+                <Modal size='lg' show={pediatria} onHide={handleClosePediatria} id='pediatria' centered>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Espacio Pediatría</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <p>Abordaje invasivo de las arritmias SV en cardiopatias congenitas: cuando, cómo y a quiénes?</p>
+                        <p>Sindrome de WPW. Que hay de nuevo en esta entidad casi centenaria?</p>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleClosePediatria}>
+                            Cerrar
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
+
+                <Modal size='lg' show={tecnicos} onHide={handleCloseTecnicos} id='tecnicos' centered>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Espacio Técnicos</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <h4>Nuevos Modos de Estimulación Cardíaca</h4>
+                        <p>Estimulación Multipunto</p>
+                        <p>Estimulación Septal</p>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleCloseTecnicos}>
+                            Cerrar
+                        </Button>
                     </Modal.Footer>
                 </Modal>
 
 
+            </Row>
+            <Row className='sponsors-row'>
+                <Button variant="primary" size="lg" className="btn-programa"><a href='https://intercloudy.contilatam.com/programa-cientifico/27/encuentro-nacional-de-arritmias-edicion-virtual'>Programa Científico Completo</a></Button>
             </Row>
 
         </div>

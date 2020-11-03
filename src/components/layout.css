@@ -639,7 +639,7 @@ pre tt:after {
 .date-top {
   display: flex;
   align-items: flex-start;
-  justify-content: end;
+  justify-content: flex-end;
   color: black;
 }
 
@@ -929,6 +929,21 @@ ul.mobile-social {
 .prev {
   top: 50%;
   left: 2vw;
+}
+
+.btn-programa {
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.btn-programa a {
+  color: white;
+}
+
+.btn-programa a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /* Invitados */
