@@ -29,7 +29,7 @@ const Comite = () => (
         <h4>Secretarios:</h4>
         <Row>
             <Col><h5>Alejandro Cueto</h5><h5>Fernando Di Tommaso</h5> <h5>Gabriel Eidelman</h5> <h5>Estela Falconi </h5> <h5>Jorge Figueroa</h5> <h5>José Gant López </h5></Col>
-            <Col><h5>Emilio Logarzo</h5><h5>Nicolás Martinenghi</h5><h5>Luis Medesani</h5><h5>Daniel Ortigoza</h5><h5>Diego Velazco</h5></Col>
+            <Col><h5>Emilio Logarzo</h5><h5>Andrés Martellotto</h5><h5>Nicolás Martinenghi</h5><h5>Luis Medesani</h5><h5>Daniel Ortigoza</h5><h5>Diego Velazco</h5></Col>
         </Row>
         <br></br>
         <hr/>

@@ -10,11 +10,12 @@ import Programa from '../components/programa'
 import Sponsors from '../components/sponsors'
 import Comite from '../components/comite'
 import Footer from '../components/footer'
+import metaImage from '../images/banner-web-2020.jpg'
 
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Inicio" />
+    <SEO title="Inicio" image={metaImage} />
     <Container fluid className='gradient'>
       < MainSlider />
       <Row>
