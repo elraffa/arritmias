@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, image: metaImage, title }) {
+function SEO({ description, lang, meta, image, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,7 +20,8 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
             description
             author
             keywords
-            url
+            siteUrl
+            image
           }
         }
       }
@@ -29,7 +30,8 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const image = metaImage && metaImage.src ? `${site.siteMetadata.siteUrl}${metaImage.src}` : null
+  // const image = metaImage && metaImage.src ? `${site.siteMetadata.siteUrl}${metaImage.src}` : null
+  // console.log(metaImage)
 
   return (
     <Helmet
@@ -48,12 +50,20 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
           content: site.siteMetadata.keywords.join(","),
         },
         {
+          name: 'image',
+          content: image
+        },
+        {
           property: `og:title`,
           content: title,
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: 'og:image',
+          content: image
         },
         {
           property: `og:type`,
@@ -75,39 +85,29 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(
-        metaImage
-          ? [
-              {
-                property: "og:image",
-                content: image,
-              },
-              {
-                property: "og:image:width",
-                content: metaImage.width,
-              },
-              {
-                property: "og:image:height",
-                content: metaImage.height,
-              },
-              {
-                name: "twitter:card",
-                content: "summary_large_image",
-              },
-            ]
-          : [
-              {
-                name: "twitter:card",
-                content: "summary",
-              },
-            ]
-      ).concat(meta)}
+        {
+          property: "og:image",
+          content: image,
+        },
+        {
+          property: "og:image:width",
+          content: image.width,
+        },
+        {
+          property: "og:image:height",
+          content: image.height,
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+      ].concat(meta)}
     />
   )
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `es`,
   meta: [],
   description: ``,
 }
@@ -117,6 +117,11 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+  }),
 }
 
 export default SEO
