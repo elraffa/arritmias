@@ -109,6 +109,10 @@ const Programa = (props) => {
                             <p>NOVEDADES DE LAS GUIAS 2020</p>
                             <p>FIBRILACIÓN AURICULAR ASINTOMATICA. MANEJO ACTUAL</p>
 
+                            <h4>OTRA MIRADA DE LA ELECTROFISIOLOGÍA CARDIACA (MESA MUJERES)</h4>
+                            <h5>ARRITMIAS Y EMBARAZO</h5>
+                            <p>VALOR DE LAS TECNICAS DE IMÁGENES EN LA ABLACIÓN DE LA FIBRILACIÓN AURICULAR Y DE LA TAQUICARDIA VENTRICULAR</p>
+
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleCloseClinica}>
@@ -170,9 +174,7 @@ const Programa = (props) => {
                     <h4>Extracción Transvenosa de Electrodos.</h4>
                     <p>EXTRACCIÓN DE CATETERES EN OCTOGENARIOS: DESAFIOS Y CONSEJOS.</p>
                     <p>RESULTADOS ACTUALES Y TRATAMIENTO DE LAS COMPLICACIONES.</p>
-                    <h4>OTRA MIRADA DE LA ELECTROFISIOLOGÍA CARDIACA (MESA MUJERES)</h4>
-                    <h5>ARRITMIAS Y EMBARAZO</h5>
-                    <p>VALOR DE LAS TECNICAS DE IMÁGENES EN LA ABLACIÓN DE LA FIBRILACIÓN AURICULAR Y DE LA TAQUICARDIA VENTRICULAR</p>
+                  
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleCloseDispositivos}>

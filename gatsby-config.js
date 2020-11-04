@@ -4,7 +4,7 @@ module.exports = {
     description: `Sitio web oficial del Encuentro Nacional de Arritmias del 12 y 13 de noviembre de 2020.`,
     author: `SADEC`,
     keywords: ['arritmias', 'encuentro de arritmias', 'dispositivos implantables', 'muerte súbita' ],
-    siteUrl: "https://www.encuentroarritmias.com.ar",
+    siteUrl: "https://www.encuentrodearritmias.com.ar",
     image: "/images/banner-web-2020.jpg",
     menuLinks: [
       {

@@ -30,7 +30,7 @@ function SEO({ description, lang, meta, image, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  // const image = metaImage && metaImage.src ? `${site.siteMetadata.siteUrl}${metaImage.src}` : null
+  const metaImage = `${site.siteMetadata.siteUrl}${image || site.siteMetadata.image}`
   // console.log(metaImage)
 
   return (
@@ -51,7 +51,7 @@ function SEO({ description, lang, meta, image, title }) {
         },
         {
           name: 'image',
-          content: image
+          content: metaImage
         },
         {
           property: `og:title`,
@@ -63,7 +63,7 @@ function SEO({ description, lang, meta, image, title }) {
         },
         {
           property: 'og:image',
-          content: image
+          content: metaImage
         },
         {
           property: `og:type`,
@@ -87,15 +87,7 @@ function SEO({ description, lang, meta, image, title }) {
         },
         {
           property: "og:image",
-          content: image,
-        },
-        {
-          property: "og:image:width",
-          content: image.width,
-        },
-        {
-          property: "og:image:height",
-          content: image.height,
+          content: metaImage,
         },
         {
           name: "twitter:card",

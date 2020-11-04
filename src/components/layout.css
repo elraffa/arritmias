@@ -974,11 +974,16 @@ ul.mobile-social {
 .invitado-selection {
   align-items: center;
   justify-content: center;
+  padding: 10px;
+}
+
+.invitado-selection p {
+  font-size: 0.9em;
 }
 
 .invitados-img {
   border-radius: 150px;
-  max-width: 200px;
+  max-width: 190px;
   margin: 0 auto 20px auto;
 }
 
@@ -986,10 +991,10 @@ ul.mobile-social {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 20;
+  padding: 20px 0 20px 0;
   justify-content: center;
   text-align: center;
-  width: 100vw;
+  width: 98vw;
 }
 
 .invitado-name {
