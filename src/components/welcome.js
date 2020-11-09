@@ -24,7 +24,7 @@ const welcome = () => (
             <div class='firma-doiny'>
                 <img src={doiny} alt='' /> 
                 <h5>David Doiny</h5>
-                <h6>Director Consejo <br></br>de Arritmias de SAC</h6>
+                <h6>Director Consejo <br></br>npde Arritmias de SAC</h6>
             </div>
             <div class='firma-speranza'>
                 <img src={speranza} alt='' width='160'/>

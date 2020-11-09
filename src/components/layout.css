@@ -851,15 +851,15 @@ ul.mobile-social {
 }
 
 .card-ablacion {
-  background-color: #35bef8;
-}
-
-.card-dispositivos {
   background-color: #24b6f4;
 }
 
-.card-subita {
+.card-dispositivos {
   background-color: #12aced;
+}
+
+.card-subita {
+  background-color: #35bef8;
 }
 
 .card-pediatria {

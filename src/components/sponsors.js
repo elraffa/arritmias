@@ -7,6 +7,7 @@ import eccosur from '../images/sponsors/logo_eccosur.svg'
 import boehringer from '../images/sponsors/boehringer.png'
 import roemmers from '../images/sponsors/roemmers.png'
 import synchromax from '../images/sponsors/synchromax.png'
+import cardiolab from '../images/sponsors/cardiolab.png'
 import { Row, Col, OverlayTrigger, Popover } from 'react-bootstrap'
 
 
@@ -79,11 +80,14 @@ const Sponsors = () => {
             <h2 className='main-subtitles'>Acompañan</h2>
         </Row>
         <Row className='sponsors-row'>
-            <Col md={6} sm={12} xs={12}>
+            <Col md={4} sm={12} xs={12}>
+                <a href='https://www.cardiolab.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={cardiolab} alt='Cardiolab' /></a>
+            </Col>
+            <Col md={4} sm={12} xs={12}>
                 <a href='https://www.roemmers.com.ar/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={roemmers} alt='Roemmers' /></a>
             </Col>
-            <Col md={6} sm={12} xs={12}>
-                <a href='https://www.synchromax.com/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={synchromax} alt='Synchromax' /></a>
+            <Col md={4} sm={12} xs={12}>
+                <a href='https://synchromax.com/' target='_blank' rel='noreferrer'><img className='img-fluid img-sponsors' src={synchromax} alt='Synchromax' /></a>
             </Col>
         </Row>
     </div>
