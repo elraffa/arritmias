@@ -17,10 +17,6 @@ export const useSiteMetadata = () => {
                           filename
                           flag
                         }
-                        programa {
-                          name
-                          description
-                        }
                     }
                 }
                 
