@@ -53,7 +53,7 @@ const Header = ({ siteTitle, menuLinks }) => {
                  <FaCalendarCheck /> 
                 <h5> 12-13 de nov. 2020</h5>
               </div>
-              <li className='btn-inscripciones'><a href='https://intercloudy.contilatam.com/1646/encuentro-nacional-de-arritmias' target='_blank' rel='noreferrer'>Inscripciones</a></li>
+              <li className='btn-inscripciones'><a href='https://arritmiatour.contilatam.com/' target='_blank' rel='noreferrer'>Inscripciones</a></li>
             
               <li className='social-element'><a href="https://www.facebook.com/Encuentro-Nacional-de-Arritmias-102559971635631" target='_blank' rel='noreferrer'>{<FaFacebook />}</a></li>
               <li className='social-element'><a href="https://www.instagram.com/encuentro.arritmias/" target='_blank' rel='noreferrer'>{<FaInstagram />}</a></li>
