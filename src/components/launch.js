@@ -15,12 +15,12 @@ import launch from '../images/banner-launch.jpg';
  */
 
 const Launch = () => (
-        <div>
-            <a href='https://arritmiatour.contilatam.com/?scene=5f91191a90cd2e79842bfccc'>
-                <img src={launch} alt='Encuentro Nacional de Arritmias' />
-            </a>
-        </div>
-    
+    <div>
+        <a href='https://arritmiatour.contilatam.com/'>
+            <img src={launch} alt='Encuentro Nacional de Arritmias' />
+        </a>
+    </div>
+
 )
 
 export default Launch
