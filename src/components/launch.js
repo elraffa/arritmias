@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import launch from '../images/banner-launch.jpg';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,24 +14,13 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-const Image = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+const Launch = () => (
+        <div>
+            <a href='https://arritmiatour.contilatam.com/?scene=5f91191a90cd2e79842bfccc'>
+                <img src={launch} alt='Encuentro Nacional de Arritmias' />
+            </a>
+        </div>
+    
+)
 
-  if (!data.placeholderImage.childImageSharp.fluid) {
-    return <div>Picture not found</div>
-  }
-
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
-
-export default Image
+export default Launch
