@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Col, Row } from 'react-bootstrap'
 import MainSlider from '../components/slider'
+import Launch from '../components/launch'
 import Welcome from '../components/welcome'
 import Invitados from "../components/invitados"
 import Programa from '../components/programa'
@@ -17,9 +18,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Inicio" image={metaImage} />
     <Container fluid className='gradient'>
-      < MainSlider />
+      <Launch />
       <Row>
-        <Col md={5} sm={12} xs={12} style={{ justifyContent: 'center', alignItems: 'center'}} ><Comite /></Col>
+        <Col md={5} sm={12} xs={12} style={{ justifyContent: 'center', alignItems: 'center' }} ><Comite /></Col>
         <Col md={7} sm={12} xs={12}><Welcome /></Col>
       </Row>
       <Row>
