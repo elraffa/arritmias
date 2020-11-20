@@ -9,6 +9,7 @@ import Invitados from "../components/invitados"
 import Programa from '../components/programa'
 import Sponsors from '../components/sponsors'
 import Comite from '../components/comite'
+import Buttons from '../components/buttons'
 import metaImage from '../images/banner-web-2020.jpg'
 
 
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <SEO title="Inicio" image={metaImage} />
     <Container fluid className='gradient'>
       <Launch />
+      <Buttons />
       <Row>
         <Col md={5} sm={12} xs={12} style={{ justifyContent: 'center', alignItems: 'center' }} ><Comite /></Col>
         <Col md={7} sm={12} xs={12}><Welcome /></Col>

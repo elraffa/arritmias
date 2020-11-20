@@ -2,12 +2,12 @@ import React from 'react'
 import speranza from '../images/firma-speranza.png'
 import coll from '../images/firma-coll.png'
 import doiny from '../images/firma-doiny.png'
+import { Button } from 'react-bootstrap';
 
 const welcome = () => (
 
     <section>
         <div id='bienvenida' className='anchor' style={{ scrollMarginTop: 120 }}></div>
-        <h1 className='main-titles'>Bienvenidos</h1>
         <h4>Estimadas/os Colegas:</h4>
         <p> Es un placer para nosotros darles la bienvenida al Encuentro Nacional de Arritmias 2020, este evento que supo ser un clásico de la electrofisiología en nuestro país hasta el año 2011, momento en el que fue reemplazado por nuestro prestigioso Congreso Argentino de Arritmias, el cual fue prorrogado para el año 2021 para continuar su modalidad presencial.</p>
         <p>
