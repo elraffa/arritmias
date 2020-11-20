@@ -1,5 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import launch from '../images/banner-launch.jpg';
 
 /*
