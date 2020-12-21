@@ -775,6 +775,11 @@ ul.mobile-social {
   text-decoration: none;
 }
 
+.newButton a {
+  color: white;
+  text-transform: uppercase;
+}
+
 /* Background gradient 
 .gradient {
   background-image: linear-gradient(white, #81b3d6, white) !important;
